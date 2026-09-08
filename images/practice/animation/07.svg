@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<rect width="1000" height="1000" fill="#0a0a0a"/>
+<rect x="34" y="34" width="932" height="932" rx="4" fill="none" stroke="#f2eee6" stroke-opacity=".42" stroke-width="3"/>
+<path d="M0 0H1000V1000" stroke="#f7941d" stroke-opacity=".13" stroke-width="2"/>
+<path d="M0 1000L1000 0" stroke="#f2eee6" stroke-opacity=".05" stroke-width="2"/>
+<circle cx="790" cy="220" r="110" fill="none" stroke="#f7941d" stroke-width="10" stroke-opacity=".75"/>
+<circle cx="790" cy="220" r="55" fill="none" stroke="#f2eee6" stroke-width="3" stroke-opacity=".3"/>
+<path d="M670 220H910M790 100V340" stroke="#f2eee6" stroke-opacity=".18" stroke-width="2"/>
+<text x="88" y="118" fill="#aaa69f" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="6">12 PRINCIPLES OF ANIMATION</text>
+<text x="88" y="202" fill="#f7941d" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">07</text>
+<text x="88" y="380" fill="#f2eee6" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="300"><tspan x="88" dy="0">Arcs</tspan></text>
+<text x="88" y="760" fill="#aaa69f" font-family="Arial, Helvetica, sans-serif" font-size="30">Organic motion follows curved paths.</text>
+<line x1="88" y1="830" x2="912" y2="830" stroke="#f2eee6" stroke-opacity=".18"/>
+<text x="88" y="890" fill="#f2eee6" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="4">ANIMATION / PLACEHOLDER STUDY</text>
+</svg>
