@@ -3,134 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style id="hm-refresh-restore-style">
-    html.hm-refresh-restoring {
-      visibility: hidden !important;
-      scroll-behavior: auto !important;
-    }
-    html.hm-refresh-restoring * {
-      scroll-behavior: auto !important;
-    }
-  </style>
   <script>
-    // HM_SCROLL_POLICY_V7_HMP_STYLE
+    // HM_SCROLL_POLICY_V5_SMART_FIXED
+    // Fresh visit -> hero.
+    // Refresh -> stay exactly where you are.
+    // Back/Forward -> browser handles normally.
     (function () {
       var nav = performance.getEntriesByType &&
                 performance.getEntriesByType('navigation')[0];
       var type = nav && nav.type ? nav.type : 'navigate';
       var key = 'hm-scroll:' + location.pathname;
-      var root = document.documentElement;
 
-      function yNow() {
-        return window.scrollY || root.scrollTop || 0;
+      function currentY() {
+        return window.scrollY || document.documentElement.scrollTop || 0;
       }
 
-      function save(y) {
+      function saveY(y) {
         try {
           sessionStorage.setItem(key, String(Math.max(0, Number(y) || 0)));
         } catch (_) {}
       }
 
-      function read() {
+      function readY() {
         try {
-          return Math.max(0, Number(sessionStorage.getItem(key) || 0));
+          return Number(sessionStorage.getItem(key) || 0);
         } catch (_) {
           return 0;
         }
       }
 
-      function jump(y) {
+      function restore(y) {
         y = Math.max(0, Number(y) || 0);
-        window.scrollTo({ top: y, left: 0, behavior: 'auto' });
-        root.scrollTop = y;
-        if (document.body) document.body.scrollTop = y;
-      }
-
-      function wait(ms) {
-        return new Promise(function (resolve) {
-          setTimeout(resolve, ms);
-        });
-      }
-
-      function nextFrame() {
-        return new Promise(function (resolve) {
+        window.scrollTo(0, y);
+        requestAnimationFrame(function () {
+          window.scrollTo(0, y);
           requestAnimationFrame(function () {
-            requestAnimationFrame(resolve);
+            window.scrollTo(0, y);
           });
-        });
-      }
-
-      function domReady() {
-        if (document.readyState !== 'loading') return Promise.resolve();
-        return new Promise(function (resolve) {
-          document.addEventListener('DOMContentLoaded', resolve, { once: true });
-        });
-      }
-
-      function windowLoaded() {
-        if (document.readyState === 'complete') return Promise.resolve();
-        return new Promise(function (resolve) {
-          window.addEventListener('load', resolve, { once: true });
         });
       }
 
       if (type === 'reload') {
         if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-        var target = read();
-        var revealed = false;
-        root.classList.add('hm-refresh-restoring');
+        var saved = readY();
 
-        function reveal() {
-          if (revealed) return;
-          revealed = true;
-          jump(target);
-          root.classList.remove('hm-refresh-restoring');
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+          restore(saved);
+        }, { once: true });
 
-        var fallback = setTimeout(reveal, 1800);
+        window.addEventListener('load', function () {
+          restore(saved);
+        }, { once: true });
 
-        (async function () {
-          await domReady();
-          jump(target);
-
-          if (document.fonts && document.fonts.ready) {
-            await Promise.race([
-              document.fonts.ready.catch(function () {}),
-              wait(300)
-            ]);
-          }
-
-          await Promise.race([windowLoaded(), wait(650)]);
-          jump(target);
-
-          var lastHeight = -1;
-          var stableCount = 0;
-
-          for (var i = 0; i < 8; i++) {
-            await wait(45);
-            jump(target);
-
-            var h = Math.max(
-              document.documentElement.scrollHeight,
-              document.body ? document.body.scrollHeight : 0
-            );
-
-            if (Math.abs(h - lastHeight) <= 1) {
-              stableCount++;
-            } else {
-              stableCount = 0;
-              lastHeight = h;
-            }
-
-            if (stableCount >= 2) break;
-          }
-
-          await nextFrame();
-          jump(target);
-          clearTimeout(fallback);
-          reveal();
-        })();
+        window.addEventListener('pageshow', function () {
+          restore(saved);
+          setTimeout(function () { restore(saved); }, 80);
+        }, { once: true });
 
       } else if (type === 'back_forward') {
         if ('scrollRestoration' in history) history.scrollRestoration = 'auto';
@@ -139,19 +68,14 @@
         if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
         if (!location.hash) {
-          save(0);
-          jump(0);
+          saveY(0);
 
+          window.scrollTo(0, 0);
           document.addEventListener('DOMContentLoaded', function () {
-            jump(0);
+            window.scrollTo(0, 0);
           }, { once: true });
-
           window.addEventListener('load', function () {
-            jump(0);
-          }, { once: true });
-
-          window.addEventListener('pageshow', function () {
-            jump(0);
+            window.scrollTo(0, 0);
           }, { once: true });
         }
       }
@@ -159,13 +83,21 @@
       var ticking = false;
       window.addEventListener('scroll', function () {
         if (!ticking) {
-          ticking = true;
           requestAnimationFrame(function () {
-            save(yNow());
+            saveY(currentY());
             ticking = false;
           });
+          ticking = true;
         }
       }, { passive: true });
+
+      window.addEventListener('pagehide', function () {
+        saveY(currentY());
+      });
+
+      window.addEventListener('beforeunload', function () {
+        saveY(currentY());
+      });
     })();
   </script>
 
