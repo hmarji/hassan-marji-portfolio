@@ -70,7 +70,7 @@ a { color: inherit; text-decoration: none; }
 .hero-image {
   position: absolute;
   inset: 0;
-  background-image: url("../images/private-residence-south-lebanon.jpg");
+  background-image: url("../images/previews/private-residence-south-lebanon.webp");
   background-size: cover;
   background-position: center;
   transform: scale(1.035);
@@ -1022,7 +1022,7 @@ footer p:last-child { text-align: right; }
 .hero { --mosaic-cols: 20; --mosaic-rows: 11; }
 
 .hero-image {
-  background-image: url("../images/private-residence-south-lebanon-construction.png") !important;
+  background-image: url("../images/previews/private-residence-south-lebanon-construction.webp") !important;
   background-position: center top !important;
   background-size: cover !important;
 }
@@ -1041,7 +1041,7 @@ footer p:last-child { text-align: right; }
 
 .mosaic-tile {
   opacity: 0;
-  background-image: url("../images/private-residence-south-lebanon.jpg");
+  background-image: url("../images/previews/private-residence-south-lebanon.webp");
   background-repeat: no-repeat;
   transform: scale(.96);
   transition: opacity 380ms ease, transform 480ms ease;
@@ -2722,5 +2722,465 @@ footer {
     font-size: 7px;
     letter-spacing: .12em;
     white-space: normal;
+  }
+}
+
+/* HM PATCH — Practice heading one line */
+.practice-heading-gallery h2{
+  font-size:clamp(24px,2.25vw,42px)!important;
+  white-space:nowrap;
+  line-height:1.05;
+}
+@media(max-width:760px){
+  .practice-heading-gallery h2{white-space:normal;font-size:clamp(24px,7vw,34px)!important;}
+}
+
+/* HM PATCH — Knowledge gallery styles */
+.knowledge-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:0 4vw 6vw;}
+.knowledge-gallery-item{border:0;background:#0d0d0d;color:#fff;padding:0;text-align:left;cursor:zoom-in;overflow:hidden;}
+.knowledge-gallery-item img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.knowledge-gallery-item span{display:block;padding:12px 14px 14px;font-size:13px;letter-spacing:.04em;}
+.knowledge-lightbox{position:fixed;inset:0;z-index:10020;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.96);padding:4vh 7vw;}
+.knowledge-lightbox.is-open{display:flex;}
+.knowledge-lightbox figure{margin:0;width:min(82vw,1500px);height:86vh;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.knowledge-lightbox figure img{max-width:100%;max-height:calc(86vh - 42px);width:auto;height:auto;object-fit:contain;}
+.knowledge-lightbox figcaption{margin-top:10px;color:rgba(255,255,255,.72);font-size:11px;letter-spacing:.12em;}
+.knowledge-lightbox-close,.knowledge-lightbox-nav{position:fixed;z-index:10021;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.42);color:#fff;cursor:pointer;}
+.knowledge-lightbox-close{top:22px;right:26px;width:46px;height:46px;font-size:28px;}
+.knowledge-lightbox-nav{top:50%;transform:translateY(-50%);width:54px;height:54px;font-size:24px;}
+.knowledge-lightbox-nav.prev{left:22px}.knowledge-lightbox-nav.next{right:22px}
+@media(max-width:800px){.knowledge-gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.knowledge-gallery{grid-template-columns:1fr}}
+
+/* HM PATCH — Footer rebuild */
+.site-footer{padding:34px 4vw 28px!important;border-top:1px solid rgba(255,255,255,.12);}
+.footer-main-grid{display:grid;grid-template-columns:1.35fr 1.15fr 1.6fr 1fr;gap:34px;align-items:start;}
+.footer-brand-block{display:flex;align-items:center;gap:18px;min-width:0;}
+.footer-home-logo{flex:0 0 auto;width:72px;height:auto;}
+.footer-home-logo svg{display:block;width:100%;height:auto;}
+.footer-home-logo-colorize .footer-hm-static,.footer-home-logo-colorize .footer-hm-top{fill:#777;transition:fill .2s ease;}
+.footer-home-logo-colorize:hover .footer-hm-static{fill:#fff;}
+.footer-home-logo-colorize:hover .footer-hm-top{fill:#f7941d;}
+.footer-contact-line{display:flex;flex-direction:column;gap:5px;min-width:0;}
+.footer-contact-line a{color:rgba(255,255,255,.82);text-decoration:none;font-size:12px;line-height:1.3;}
+.footer-site-url{font-weight:600;color:#fff!important;}
+.footer-heading{margin-bottom:12px;color:rgba(255,255,255,.48);font-size:10px;text-transform:uppercase;letter-spacing:.16em;}
+.footer-social-links{display:flex!important;flex-wrap:wrap;gap:15px!important;align-items:center;}
+.footer-social-links a{color:#bdbdbd;text-decoration:none;font-size:21px;line-height:1;transition:color .18s ease,transform .18s ease;}
+.footer-social-links a:hover{color:#fff;transform:translateY(-1px);}
+.footer-platform-links{display:flex;gap:18px;flex-wrap:wrap;}
+.footer-platform-card{display:flex;flex-direction:column;gap:3px;color:#fff;text-decoration:none;min-width:88px;}
+.footer-platform-card strong{font-size:20px;letter-spacing:.05em;}
+.footer-platform-card small{max-width:150px;color:rgba(255,255,255,.52);font-size:10px;line-height:1.25;}
+.footer-platform-card.is-pending{opacity:.45;}
+.footer-sitemap-links{display:flex;flex-wrap:wrap;gap:8px 14px;}
+.footer-sitemap-links a{color:rgba(255,255,255,.74);text-decoration:none;font-size:12px;}
+.footer-sitemap-links a:hover,.footer-contact-line a:hover,.footer-platform-card:hover strong{color:#fff;}
+@media(max-width:1050px){.footer-main-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:650px){.footer-main-grid{grid-template-columns:1fr;}}
+
+/* HM PATCH — Selected Work arrows */
+.selected-work-lightbox-nav,.selected-work-lightbox-close{position:fixed;z-index:10011;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.42);color:#fff;cursor:pointer;}
+.selected-work-lightbox-close{top:22px;right:26px;width:46px;height:46px;font-size:28px;}
+.selected-work-lightbox-nav{top:50%;transform:translateY(-50%);width:54px;height:54px;font-size:24px;}
+.selected-work-lightbox-nav.prev{left:22px}.selected-work-lightbox-nav.next{right:22px}
+
+
+/* HM FOOTER V2 CLEAN REDESIGN */
+.footer-v2 {
+  padding: 34px 4vw 30px !important;
+  background: #080808;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.footer-v2-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.footer-v2-brand {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-v2-logo-link {
+  width: 82px;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.footer-hm-logo {
+  width: 100%;
+  display: block;
+}
+
+.footer-hm-main,
+.footer-hm-cap {
+  fill: #757575;
+  transition: fill .18s ease;
+}
+
+.footer-v2-logo-link:hover .footer-hm-main {
+  fill: #fff;
+}
+
+.footer-v2-logo-link:hover .footer-hm-cap {
+  fill: #f7941d;
+}
+
+.footer-v2-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-v2-contact a {
+  color: rgba(255,255,255,.76);
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.footer-v2-domain {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.footer-v2-social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-v2-label {
+  color: rgba(255,255,255,.42);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  white-space: nowrap;
+}
+
+.footer-v2-social-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-v2-social-row a {
+  color: #b8b8b8;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 1;
+  min-width: 24px;
+  text-align: center;
+  transition: color .18s ease, transform .18s ease;
+}
+
+.footer-v2-social-row a:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.footer-v2-divider {
+  height: 1px;
+  background: rgba(255,255,255,.08);
+  margin: 24px 0;
+}
+
+.footer-v2-platform-row,
+.footer-v2-bottom {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.footer-v2-platforms {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 18px;
+}
+
+.footer-v2-platform {
+  display: grid;
+  grid-template-columns: 54px minmax(0,1fr);
+  gap: 12px;
+  align-items: baseline;
+  text-decoration: none;
+  color: #fff;
+  min-width: 0;
+}
+
+.footer-v2-platform strong {
+  font-size: 21px;
+  letter-spacing: .05em;
+}
+
+.footer-v2-platform span {
+  color: rgba(255,255,255,.56);
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-v2-platform-pending {
+  opacity: .48;
+}
+
+.footer-v2-sitemap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+
+.footer-v2-sitemap a {
+  color: rgba(255,255,255,.72);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-v2-sitemap a:hover,
+.footer-v2-contact a:hover,
+.footer-v2-platform:hover strong,
+.footer-v2-platform:hover span {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .footer-v2-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-v2-platform-row,
+  .footer-v2-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-v2-platforms {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-v2 {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+  .footer-v2-logo-link {
+    width: 68px;
+  }
+  .footer-v2-contact a {
+    white-space: normal;
+  }
+}
+
+
+/* HM PATCH — Standardize work and practice thumbnails */
+.selected-work-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  grid-auto-rows:clamp(120px,11vw,170px)!important;
+  gap:10px!important;
+}
+.selected-work-wide{
+  grid-column:span 1!important;
+}
+.selected-work-item,
+.selected-work-item img{
+  width:100%;
+  height:100%;
+}
+.selected-work-item img{
+  object-fit:cover!important;
+}
+
+.bridge-grid{
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:10px!important;
+  align-items:start!important;
+}
+.bridge-item,
+.bridge-item.wide,
+.bridge-item.tall{
+  grid-column:span 1!important;
+  grid-row:span 1!important;
+  aspect-ratio:4 / 3!important;
+  min-height:0!important;
+}
+.bridge-item img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+}
+
+@media (max-width: 1280px){
+  .bridge-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;}
+}
+@media (max-width: 980px){
+  .selected-work-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:clamp(120px,18vw,180px)!important;}
+  .bridge-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;}
+}
+@media (max-width: 700px){
+  .selected-work-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-rows:clamp(110px,28vw,160px)!important;}
+  .bridge-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+}
+@media (max-width: 520px){
+  .selected-work-grid,
+  .bridge-grid{grid-template-columns:1fr!important;}
+}
+
+/* HM FINAL — Knowledge mirrors Practice */
+.knowledge-browser{display:grid;grid-template-columns:240px minmax(0,1fr);min-height:420px;border-top:1px solid var(--hm-line);border-bottom:1px solid var(--hm-line);background:#090909}
+.knowledge-sidebar{padding:22px 18px 22px 0;border-right:1px solid var(--hm-line)}
+.knowledge-label{text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:#777;margin:0 0 14px}
+.knowledge-category{width:100%;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;text-align:left;padding:15px 10px;border:0;border-bottom:1px solid #242424;background:transparent;color:#8e8e8e;font:inherit;cursor:pointer;transition:.2s ease}
+.knowledge-category span{font-size:10px;color:#b36b10;letter-spacing:.12em}
+.knowledge-category:hover,.knowledge-category.is-active{color:#f2eee6;background:#101010;padding-left:14px}
+.knowledge-category.is-active{box-shadow:inset 2px 0 #f7941d}
+.knowledge-content{min-width:0;padding:18px 8px 28px 24px}
+.knowledge-toolbar{display:flex;align-items:center;min-height:48px;padding:0 10px 16px 0;border-bottom:1px solid #222;margin-bottom:16px}
+.knowledge-toolbar h3{margin:0}
+.knowledge-gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.knowledge-thumb{aspect-ratio:16/9;position:relative;overflow:hidden;border:0;padding:0;background:#111;cursor:zoom-in}
+.knowledge-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.knowledge-empty{color:#777;font-size:12px;padding:24px 0}
+.footer-v2-social a,.footer-social a,.footer-socials a{display:inline-flex;align-items:center;justify-content:center}
+.footer-v2-social svg,.footer-social svg,.footer-socials svg{width:22px;height:22px;fill:currentColor;display:block}
+.footer-wa-contact{display:flex;align-items:center;gap:9px;width:max-content;max-width:100%;color:inherit;text-decoration:none;margin:6px 0}
+.footer-wa-contact svg{width:18px;height:18px;fill:currentColor;flex:0 0 auto}
+.footer-wa-contact:hover{color:#fff}
+@media(max-width:1100px){.knowledge-browser{grid-template-columns:190px minmax(0,1fr)}.knowledge-gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.knowledge-browser{grid-template-columns:1fr}.knowledge-sidebar{border-right:0;display:flex;overflow-x:auto;padding:0 0 12px}.knowledge-label{display:none}.knowledge-category{min-width:180px}.knowledge-content{padding-left:0}.knowledge-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.knowledge-gallery-grid{grid-template-columns:1fr}}
+
+/* HM FINAL CONTACT FIX */
+.footer-contact-phones{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:14px;
+}
+.footer-wa-contact{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  width:max-content !important;
+  max-width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#bdbdbd !important;
+  text-decoration:none !important;
+  font-size:12px !important;
+  line-height:1.25 !important;
+  background:none !important;
+  border:0 !important;
+}
+.footer-wa-contact svg{
+  width:16px !important;
+  height:16px !important;
+  min-width:16px !important;
+  max-width:16px !important;
+  min-height:16px !important;
+  max-height:16px !important;
+  fill:currentColor !important;
+  display:block !important;
+  flex:0 0 16px !important;
+}
+.footer-wa-contact span{
+  display:inline-block !important;
+  white-space:nowrap !important;
+}
+.footer-wa-contact b{
+  font-weight:500 !important;
+  color:#d7d7d7 !important;
+  margin-right:6px !important;
+}
+.footer-wa-contact:hover,
+.footer-wa-contact:hover b{
+  color:#fff !important;
+}
+
+
+/* HM KNOWLEDGE V2 - exact Practice page structure */
+.knowledge-practice .practice-heading-gallery{
+  margin-bottom:0 !important;
+}
+
+.knowledge-practice .knowledge-gallery-grid{
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:10px !important;
+  align-items:start !important;
+}
+
+.knowledge-practice .knowledge-thumb{
+  position:relative !important;
+  aspect-ratio:16 / 9 !important;
+  border:0 !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  background:#111 !important;
+  cursor:zoom-in !important;
+}
+
+.knowledge-practice .knowledge-thumb img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  transition:transform .28s ease, filter .28s ease !important;
+}
+
+.knowledge-practice .knowledge-thumb:hover img{
+  transform:scale(1.025) !important;
+}
+
+.knowledge-practice .knowledge-thumb-index{
+  position:absolute !important;
+  left:6px !important;
+  bottom:6px !important;
+  padding:2px 5px !important;
+  background:rgba(0,0,0,.65) !important;
+  color:#ddd !important;
+  font-size:9px !important;
+  letter-spacing:.1em !important;
+}
+
+.knowledge-practice .knowledge-empty{
+  color:#777 !important;
+  font-size:12px !important;
+  padding:22px 0 !important;
+}
+
+.knowledge-practice .practice-heading-gallery h2{
+  white-space:nowrap !important;
+  font-size:clamp(24px,2.25vw,42px) !important;
+  line-height:1.05 !important;
+}
+
+@media(max-width:1100px){
+  .knowledge-practice .knowledge-gallery-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:760px){
+  .knowledge-practice .practice-heading-gallery h2{
+    white-space:normal !important;
+  }
+  .knowledge-practice .knowledge-gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:520px){
+  .knowledge-practice .knowledge-gallery-grid{
+    grid-template-columns:1fr !important;
   }
 }

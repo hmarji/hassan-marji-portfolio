@@ -1,3 +1,11 @@
+// HM image variants: thumbnails for grids, previews for large viewers.
+function hmImageVariant(src, kind = 'previews') {
+  if (!src || !src.startsWith('images/') || /\.(gif|svg|webp)$/i.test(src)) return src;
+  const dot = src.lastIndexOf('.');
+  if (dot < 0) return src;
+  return `images/${kind}/${src.slice(7, dot)}.webp`;
+}
+
 // Fresh visit starts at the hero; refresh/back-forward keep their position.
 window.addEventListener('pageshow', () => {
   const nav = performance.getEntriesByType('navigation')[0];
@@ -50,12 +58,12 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   };
 
   const names = {
-    architecture: 'Architecture',
+    architecture: 'Engineering',
     painting: 'Painting & Digital Painting',
     photography: 'Photography',
     graphic: 'Graphic Design',
     animation: 'Animation',
-    education: 'Education'
+    education: 'Training'
   };
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
@@ -415,7 +423,7 @@ document.querySelectorAll('.site-nav a').forEach(link => {
 /* v1.25 — Bridge-style practice browser and Knowledge page-flip */
 (() => {
   const pools = {"architecture": ["images/practice/architecture/01.png", "images/practice/architecture/02.png", "images/practice/architecture/03.png", "images/practice/architecture/04.png", "images/practice/architecture/05.png", "images/practice/architecture/06.png", "images/practice/architecture/07.png", "images/practice/architecture/08.png", "images/practice/architecture/09.png", "images/practice/architecture/10.png", "images/practice/architecture/11.png", "images/practice/architecture/12.png", "images/practice/architecture/13.png", "images/practice/architecture/14.png", "images/practice/architecture/Nohad render 01.png", "images/practice/architecture/Visualization_01.jpg", "images/practice/architecture/Visualization_16.jpg", "images/practice/architecture/Visualization_21.jpg", "images/practice/architecture/a_detailed_pen_and_wash_architectural_sketch_ink_d.png", "images/practice/architecture/a_watercolor_and_ink_architectural_sketch_painting.png", "images/practice/architecture/architectural_corbel_sketch_with_distant_hills.png", "images/practice/architecture/architectural_sketch_of_a_mediterranean_stone_hous.png", "images/practice/architecture/mediterranean_villa_architectural_sketch.png", "images/practice/architecture/terracotta_roofed_stone_villa_sketch.png"], "painting": ["images/practice/painting/01.png", "images/practice/painting/02.png", "images/practice/painting/03.png", "images/practice/painting/04.png", "images/practice/painting/05.png", "images/practice/painting/06.png", "images/practice/painting/07.png", "images/practice/painting/08.png", "images/practice/painting/09.png", "images/practice/painting/10.png", "images/practice/painting/11.png", "images/practice/painting/12.png", "images/practice/painting/13.png", "images/practice/painting/14.png", "images/practice/painting/15.png", "images/practice/painting/16.png", "images/practice/painting/an_impasto_oil_painting_palette_knife_still_life.png", "images/practice/painting/an_impressionistic_oil_painting_style_scene_thick.png", "images/practice/painting/contemplative_ink_wash_portrait.png", "images/practice/painting/dramatic_monochrome_bearded_portrait.png", "images/practice/painting/impressionist_seaside_with_sail_tower.png", "images/practice/painting/kindly_elder_in_impasto_oils.png", "images/practice/painting/warm_watercolor_portrait_of_an_elderly_man.png", "images/practice/painting/watercolor_portrait_of_a_bearded_scholar.png", "images/practice/painting/watercolor_portrait_of_a_smiling_girl.png"], "photography": ["images/practice/photography/01.jpeg", "images/practice/photography/02.jpg", "images/practice/photography/03.jpg", "images/practice/photography/04.jpg", "images/practice/photography/05.jpg", "images/practice/photography/06.jpg", "images/practice/photography/07.jpg", "images/practice/photography/08.jpg", "images/practice/photography/09.jpg", "images/practice/photography/10.jpg", "images/practice/photography/11.jpg", "images/practice/photography/12.jpg", "images/practice/photography/13.jpg", "images/practice/photography/14.jpg", "images/practice/photography/15.jpg", "images/practice/photography/16.jpeg", "images/practice/photography/17.jpeg", "images/practice/photography/18.jpeg", "images/practice/photography/19.jpeg", "images/practice/photography/20.jpeg", "images/practice/photography/21.jpeg", "images/practice/photography/22.jpeg", "images/practice/photography/23.jpeg", "images/practice/photography/24.jpeg", "images/practice/photography/25.jpeg"], "graphic": ["images/practice/graphic/0ea3fa89-b719-40a0-bd37-df663a2dc50c.png", "images/practice/graphic/26594ad7-fa53-41e9-a4a7-b913fc515e30.png", "images/practice/graphic/733c36aa-bfff-4081-8a8a-310a2c846985.png", "images/practice/graphic/a_high_resolution_portrait_illustration_in_a_warm.png", "images/practice/graphic/cc637936-32c3-4ac1-939a-7ad2967c8ea8.png", "images/practice/graphic/d45df67a-325e-4a61-bdbd-bb0257448a5e.png"], "animation": ["images/practice/animation/2425899-walkcycle_side1(1).jpeg", "images/practice/animation/Horse runing.webp", "images/practice/animation/Hourse walk.gif", "images/practice/animation/Jump(1).png", "images/practice/animation/richard-williams-run-cycle-copy.jpg", "images/practice/animation/walk_cycle(1).jpg"], "education": ["images/education/01-capsat-exhibition.jpg", "images/education/02-media-exhibition.jpg", "images/education/03-adms-training.jpg", "images/education/04-adms-certificate.jpg", "images/education/05-adms-group.jpg", "images/education/06-training-2004.jpg", "images/education/07-training-2005.jpg", "images/education/08-adobe-workshop.jpg", "images/education/09-after-effects-class.jpg", "images/education/10-one-to-one-training.jpg", "images/education/11-event-demo.jpg", "images/education/12-training-session.jpg", "images/education/13-aramco-training.jpg", "images/education/14-training-group-modern.jpg", "images/education/15-class-selfie.jpg", "images/education/16-workshop-collaboration.jpg", "images/education/17-training-group.jpg", "images/education/18-lab-session.jpg", "images/education/19-adobe-session.jpg"]};
-  const names={architecture:'Architecture',painting:'Painting & Digital Painting',photography:'Photography',graphic:'Graphic Design',animation:'Animation',education:'Education'};
+  const names={architecture:'Engineering',painting:'Painting & Digital Painting',photography:'Photography',graphic:'Graphic Design',animation:'Animation',education:'Training'};
   const grid=document.getElementById('bridgeGrid'); if(!grid) return;
   const buttons=[...document.querySelectorAll('[data-gallery-category]')];
   const title=document.getElementById('bridgeCategoryTitle'), count=document.getElementById('bridgeCount'), shuffle=document.getElementById('bridgeShuffle');
@@ -431,7 +439,7 @@ document.querySelectorAll('.site-nav a').forEach(link => {
     }
     count.textContent=`${items.length} items`;
   }
-  function openLb(i){if(!currentItems.length)return;currentIndex=(i+currentItems.length)%currentItems.length;lbImg.src=currentItems[currentIndex];lbCap.textContent=`${names[current]} · ${String(currentIndex+1).padStart(2,'0')} / ${String(currentItems.length).padStart(2,'0')}`;lightbox.classList.add('is-open');lightbox.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
+  function openLb(i){if(!currentItems.length)return;currentIndex=(i+currentItems.length)%currentItems.length;lbImg.src=hmImageVariant(currentItems[currentIndex],'previews');lbCap.textContent=`${names[current]} · ${String(currentIndex+1).padStart(2,'0')} / ${String(currentItems.length).padStart(2,'0')}`;lightbox.classList.add('is-open');lightbox.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
   function closeLb(){lightbox.classList.remove('is-open');lightbox.setAttribute('aria-hidden','true');document.body.style.overflow=''}
   buttons.forEach(b=>b.addEventListener('click',()=>render(b.dataset.galleryCategory)));
   shuffle?.addEventListener('click',()=>render(current,true));
@@ -463,8 +471,130 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   const strip=document.getElementById('lifeStrip'), main=document.getElementById('lifeMainImage'), counter=document.getElementById('lifeCounter');
   if(!strip||!main)return;
   const thumbs=[...strip.querySelectorAll('.life-thumb')]; let index=0;
-  function show(i){index=(i+thumbs.length)%thumbs.length;thumbs.forEach((b,n)=>b.classList.toggle('is-active',n===index));const im=thumbs[index].querySelector('img');main.src=im.src;main.alt=im.alt||`Life timeline photograph ${index+1}`;counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(thumbs.length).padStart(2,'0')}`;thumbs[index].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});}
+  function show(i){index=(i+thumbs.length)%thumbs.length;thumbs.forEach((b,n)=>b.classList.toggle('is-active',n===index));const im=thumbs[index].querySelector('img');main.src=im.src.replace('/thumbs/','/previews/');main.alt=im.alt||`Life timeline photograph ${index+1}`;counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(thumbs.length).padStart(2,'0')}`;thumbs[index].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});}
   thumbs.forEach((b,i)=>b.addEventListener('click',()=>show(i)));document.getElementById('lifePrev')?.addEventListener('click',()=>show(index-1));document.getElementById('lifeNext')?.addEventListener('click',()=>show(index+1));
   let down=false,startX=0,startScroll=0,moved=false;strip.addEventListener('pointerdown',e=>{down=true;moved=false;startX=e.clientX;startScroll=strip.scrollLeft;strip.setPointerCapture?.(e.pointerId)});strip.addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-startX;if(Math.abs(dx)>4)moved=true;strip.scrollLeft=startScroll-dx});strip.addEventListener('pointerup',()=>{down=false});
   show(0);
+})();
+
+/* HM PATCH — Timeline thumbnail sync */
+(() => {
+  const strip = document.getElementById('lifeStrip');
+  const main = document.getElementById('lifeMainImage');
+  const counter = document.getElementById('lifeCounter');
+  if (!strip || !main) return;
+  const thumbs = [...strip.querySelectorAll('.life-thumb')];
+  let index = Math.max(0, thumbs.findIndex(b => b.classList.contains('is-active')));
+  const toPreview = src => (src || '').replace('/thumbs/','/previews/');
+  function show(i) {
+    index = (i + thumbs.length) % thumbs.length;
+    thumbs.forEach((b,n)=>b.classList.toggle('is-active', n===index));
+    const im = thumbs[index]?.querySelector('img');
+    if (im) {
+      main.src = toPreview(im.currentSrc || im.src);
+      main.alt = im.alt || `Life timeline photograph ${index+1}`;
+    }
+    if (counter) counter.textContent = `${String(index+1).padStart(2,'0')} / ${String(thumbs.length).padStart(2,'0')}`;
+  }
+  thumbs.forEach((b,i)=>b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();show(i);},true));
+})();
+
+/* HM PATCH — Selected Work navigator */
+(() => {
+  const items=[...document.querySelectorAll('.selected-work-item')];
+  const lb=document.getElementById('selectedWorkLightbox');
+  if(!items.length||!lb)return;
+  const img=document.getElementById('selectedWorkLightboxImage')||lb.querySelector('img');
+  const close=document.getElementById('selectedWorkClose')||lb.querySelector('button');
+  let index=0;
+  const srcFor=item=>item.dataset.selectedSrc||item.querySelector('img')?.src;
+  function show(i){
+    index=(i+items.length)%items.length;
+    if(img){img.src=srcFor(items[index]);img.alt=items[index].querySelector('img')?.alt||'Selected portfolio work';}
+  }
+  function open(i){show(i);lb.classList.add('is-open');lb.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+  function shut(){lb.classList.remove('is-open');lb.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+  items.forEach((item,i)=>item.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();open(i);},true));
+  document.getElementById('selectedWorkPrev')?.addEventListener('click',e=>{e.stopPropagation();show(index-1);});
+  document.getElementById('selectedWorkNext')?.addEventListener('click',e=>{e.stopPropagation();show(index+1);});
+  close?.addEventListener('click',e=>{e.stopPropagation();shut();});
+  lb.addEventListener('click',e=>{if(e.target===lb)shut();});
+  window.addEventListener('keydown',e=>{
+    if(!lb.classList.contains('is-open'))return;
+    if(e.key==='Escape')shut();
+    if(e.key==='ArrowLeft')show(index-1);
+    if(e.key==='ArrowRight')show(index+1);
+  });
+})();
+
+/* HM PATCH — Knowledge gallery */
+(() => {
+  const items=[...document.querySelectorAll('.knowledge-gallery-item')];
+  const lb=document.getElementById('knowledgeLightbox');
+  const img=document.getElementById('knowledgeLightboxImage');
+  const cap=document.getElementById('knowledgeLightboxCaption');
+  if(!items.length||!lb||!img)return;
+  let index=0;
+  function show(i){
+    index=(i+items.length)%items.length;
+    const source=items[index].querySelector('img');
+    const title=items[index].querySelector('span')?.textContent||`Knowledge item ${index+1}`;
+    img.src=(source.currentSrc||source.src).replace('/thumbs/','/previews/');
+    img.alt=source.alt||title;
+    if(cap)cap.textContent=`${title} · ${String(index+1).padStart(2,'0')} / ${String(items.length).padStart(2,'0')}`;
+  }
+  function open(i){show(i);lb.classList.add('is-open');lb.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('is-open');lb.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+  items.forEach((item,i)=>item.addEventListener('click',()=>open(i)));
+  document.getElementById('knowledgePrev')?.addEventListener('click',e=>{e.stopPropagation();show(index-1);});
+  document.getElementById('knowledgeNext')?.addEventListener('click',e=>{e.stopPropagation();show(index+1);});
+  document.getElementById('knowledgeClose')?.addEventListener('click',close);
+  lb.addEventListener('click',e=>{if(e.target===lb)close();});
+  window.addEventListener('keydown',e=>{
+    if(!lb.classList.contains('is-open'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowLeft')show(index-1);
+    if(e.key==='ArrowRight')show(index+1);
+  });
+})();
+
+
+/* HM FINAL — Knowledge categories + lightbox */
+(() => {
+  const allItems=[...document.querySelectorAll('.knowledge-thumb')];
+  const buttons=[...document.querySelectorAll('[data-knowledge-filter]')];
+  const title=document.getElementById('knowledgeCategoryTitle');
+  const count=document.getElementById('knowledgeCount');
+  const empty=document.getElementById('knowledgeEmpty');
+  const lb=document.getElementById('knowledgeLightbox');
+  const lbImg=document.getElementById('knowledgeLightboxImage');
+  const lbCap=document.getElementById('knowledgeLightboxCaption');
+  if(!allItems.length || !buttons.length || !lb || !lbImg) return;
+  const labels={engineering:'Engineering',painting:'Painting & Digital Painting',photography:'Photography',graphic:'Graphic Design',animation:'Animation',training:'Training'};
+  let currentCategory='engineering', currentItems=[], index=0;
+  const toPreview=src=>(src||'').replace('/thumbs/','/previews/');
+  function render(cat){
+    currentCategory=cat; currentItems=allItems.filter(i=>i.dataset.knowledgeCategory===cat);
+    allItems.forEach(i=>i.hidden=i.dataset.knowledgeCategory!==cat);
+    buttons.forEach(b=>b.classList.toggle('is-active',b.dataset.knowledgeFilter===cat));
+    if(title) title.textContent=labels[cat];
+    if(count) count.textContent=`${currentItems.length} items`;
+    if(empty) empty.hidden=currentItems.length!==0;
+  }
+  function show(i){
+    if(!currentItems.length) return; index=(i+currentItems.length)%currentItems.length;
+    const t=currentItems[index].querySelector('img');
+    lbImg.src=toPreview(t.currentSrc||t.src); lbImg.alt=t.alt||labels[currentCategory];
+    if(lbCap) lbCap.textContent=`${labels[currentCategory]} · ${String(index+1).padStart(2,'0')} / ${String(currentItems.length).padStart(2,'0')}`;
+  }
+  function open(item){ const i=currentItems.indexOf(item); if(i<0)return; show(i); lb.classList.add('is-open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+  function close(){ lb.classList.remove('is-open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+  buttons.forEach(b=>b.addEventListener('click',()=>render(b.dataset.knowledgeFilter)));
+  allItems.forEach(item=>item.addEventListener('click',()=>open(item)));
+  document.getElementById('knowledgePrev')?.addEventListener('click',e=>{e.stopPropagation();show(index-1);});
+  document.getElementById('knowledgeNext')?.addEventListener('click',e=>{e.stopPropagation();show(index+1);});
+  document.getElementById('knowledgeClose')?.addEventListener('click',close);
+  lb.addEventListener('click',e=>{if(e.target===lb)close();});
+  window.addEventListener('keydown',e=>{if(!lb.classList.contains('is-open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(index-1);if(e.key==='ArrowRight')show(index+1);});
+  render('engineering');
 })();
