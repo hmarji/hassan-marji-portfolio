@@ -6,14 +6,6 @@ function hmImageVariant(src, kind = 'previews') {
   return `images/${kind}/${src.slice(7, dot)}.webp`;
 }
 
-// Fresh visit starts at the hero; refresh/back-forward keep their position.
-window.addEventListener('pageshow', () => {
-  const nav = performance.getEntriesByType('navigation')[0];
-
-  if (nav && nav.type === 'navigate' && !window.location.hash) {
-    window.scrollTo(0, 0);
-  }
-});
 document.querySelectorAll('.site-nav a').forEach(link => {
   link.addEventListener('click', () => {
     // Horizontal navigation stays permanently visible.
