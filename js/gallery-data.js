@@ -96,12 +96,6 @@ window.HM_GALLERY_DATA = {
         "title": "09"
       },
       {
-        "original": "images/practice/architecture/10.png",
-        "thumb": "images/thumbs/practice/architecture/10.webp",
-        "preview": "images/previews/practice/architecture/10.webp",
-        "title": "10"
-      },
-      {
         "original": "images/practice/architecture/11.png",
         "thumb": "images/thumbs/practice/architecture/11.webp",
         "preview": "images/previews/practice/architecture/11.webp",
