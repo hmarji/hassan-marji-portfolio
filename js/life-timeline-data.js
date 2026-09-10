@@ -30,3 +30,22 @@ window.HM_LIFE_TIMELINE = [
   { file: "38.webp", date: "", caption: "" },
   { file: "39.webp", date: "", caption: "" }
 ];
+
+/* HM Portfolio — Life Timeline temporarily hidden.
+   Keep the complete timeline system in the project for future use.
+   To restore it later, remove only this block. */
+(() => {
+  const hideTimeline = () => {
+    const timeline = document.querySelector('.life-timeline');
+    if (!timeline) return;
+    timeline.hidden = true;
+    timeline.setAttribute('aria-hidden', 'true');
+    timeline.style.setProperty('display', 'none', 'important');
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', hideTimeline, { once: true });
+  } else {
+    hideTimeline();
+  }
+})();
