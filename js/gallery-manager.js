@@ -14,6 +14,14 @@
     return clone;
   }
 
+  function readSession(key) {
+    try { return sessionStorage.getItem(key); } catch (_) { return null; }
+  }
+
+  function writeSession(key, value) {
+    try { sessionStorage.setItem(key, value); } catch (_) {}
+  }
+
   // ---------- Selected Work ----------
   (() => {
     const grid = document.querySelector('.selected-work-grid');
@@ -64,6 +72,7 @@
       'graphic-design':'Graphic Design', animation:'Animation', training:'Training'
     };
     const legacyToCanonical = {architecture:'engineering', painting:'painting', photography:'photography', graphic:'graphic-design', animation:'animation', education:'training'};
+    const stateKey = 'hm-practice-category';
 
     const rawButtons = [...document.querySelectorAll('[data-gallery-category]')];
     const buttons = rawButtons.map(old => {
@@ -78,13 +87,17 @@
     if (!lb) return;
     const lbImg = lb.querySelector('#practiceLightboxImage');
     const lbCap = lb.querySelector('#practiceLightboxCaption');
-    let current = 'engineering', currentItems = [], currentIndex = 0;
+    const remembered = readSession(stateKey);
+    let current = Object.prototype.hasOwnProperty.call(categories, remembered) ? remembered : 'engineering';
+    let currentItems = [], currentIndex = 0;
 
     const shuffled = a => {
       a=[...a]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a;
     };
     function render(cat, random=false) {
+      if (!Object.prototype.hasOwnProperty.call(categories, cat)) cat = 'engineering';
       current = cat;
+      writeSession(stateKey, current);
       buttons.forEach(b => b.classList.toggle('is-active', b.dataset.galleryCategory === cat));
       title.textContent = labels[cat] || cat;
       currentItems = random ? shuffled(categories[cat] || []) : [...(categories[cat] || [])];
@@ -119,7 +132,7 @@
       if (e.key === 'ArrowLeft') show(currentIndex-1);
       if (e.key === 'ArrowRight') show(currentIndex+1);
     });
-    render('engineering');
+    render(current);
   })();
 
   // ---------- Knowledge ----------
@@ -136,6 +149,7 @@
       engineering:'Engineering', painting:'Painting & Digital Painting', photography:'Photography',
       'graphic-design':'Graphic Design', animation:'Animation', training:'Training'
     };
+    const stateKey = 'hm-knowledge-category';
     const rawButtons = [...document.querySelectorAll('[data-knowledge-filter]')];
     const buttons = rawButtons.map(old => {
       const map = {graphic:'graphic-design'};
@@ -148,10 +162,14 @@
     if (!lb) return;
     const lbImg = lb.querySelector('#knowledgeLightboxImage');
     const lbCap = lb.querySelector('#knowledgeLightboxCaption');
-    let current='engineering', currentItems=[], currentIndex=0;
+    const remembered = readSession(stateKey);
+    let current = Object.prototype.hasOwnProperty.call(categories, remembered) ? remembered : 'engineering';
+    let currentItems=[], currentIndex=0;
 
     function render(cat) {
+      if (!Object.prototype.hasOwnProperty.call(categories, cat)) cat = 'engineering';
       current = cat;
+      writeSession(stateKey, current);
       currentItems = [...(categories[cat] || [])];
       buttons.forEach(b => b.classList.toggle('is-active', b.dataset.knowledgeFilter === cat));
       title.textContent = labels[cat] || cat;
@@ -186,7 +204,7 @@
       if (e.key === 'ArrowLeft') show(currentIndex-1);
       if (e.key === 'ArrowRight') show(currentIndex+1);
     });
-    render('engineering');
+    render(current);
   })();
 })();
 
