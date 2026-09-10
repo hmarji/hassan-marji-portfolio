@@ -14,12 +14,12 @@
     return clone;
   }
 
-  function readSession(key) {
-    try { return sessionStorage.getItem(key); } catch (_) { return null; }
+  function readSaved(key) {
+    try { return localStorage.getItem(key); } catch (_) { return null; }
   }
 
-  function writeSession(key, value) {
-    try { sessionStorage.setItem(key, value); } catch (_) {}
+  function writeSaved(key, value) {
+    try { localStorage.setItem(key, value); } catch (_) {}
   }
 
   // ---------- Selected Work ----------
@@ -87,7 +87,7 @@
     if (!lb) return;
     const lbImg = lb.querySelector('#practiceLightboxImage');
     const lbCap = lb.querySelector('#practiceLightboxCaption');
-    const remembered = readSession(stateKey);
+    const remembered = readSaved(stateKey);
     let current = Object.prototype.hasOwnProperty.call(categories, remembered) ? remembered : 'engineering';
     let currentItems = [], currentIndex = 0;
 
@@ -97,7 +97,7 @@
     function render(cat, random=false) {
       if (!Object.prototype.hasOwnProperty.call(categories, cat)) cat = 'engineering';
       current = cat;
-      writeSession(stateKey, current);
+      writeSaved(stateKey, current);
       buttons.forEach(b => b.classList.toggle('is-active', b.dataset.galleryCategory === cat));
       title.textContent = labels[cat] || cat;
       currentItems = random ? shuffled(categories[cat] || []) : [...(categories[cat] || [])];
@@ -162,14 +162,14 @@
     if (!lb) return;
     const lbImg = lb.querySelector('#knowledgeLightboxImage');
     const lbCap = lb.querySelector('#knowledgeLightboxCaption');
-    const remembered = readSession(stateKey);
+    const remembered = readSaved(stateKey);
     let current = Object.prototype.hasOwnProperty.call(categories, remembered) ? remembered : 'engineering';
     let currentItems=[], currentIndex=0;
 
     function render(cat) {
       if (!Object.prototype.hasOwnProperty.call(categories, cat)) cat = 'engineering';
       current = cat;
-      writeSession(stateKey, current);
+      writeSaved(stateKey, current);
       currentItems = [...(categories[cat] || [])];
       buttons.forEach(b => b.classList.toggle('is-active', b.dataset.knowledgeFilter === cat));
       title.textContent = labels[cat] || cat;
