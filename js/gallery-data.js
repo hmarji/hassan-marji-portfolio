@@ -42,141 +42,147 @@ window.HM_GALLERY_DATA = {
   "practice": {
     "engineering": [
       {
-        "original": "images/practice/architecture/01.png",
-        "thumb": "images/thumbs/practice/architecture/01.webp",
-        "preview": "images/previews/practice/architecture/01.webp",
+        "original": "images/practice/engineering/01.png",
+        "thumb": "images/thumbs/practice/engineering/01.webp",
+        "preview": "images/previews/practice/engineering/01.webp",
         "title": "01"
       },
       {
-        "original": "images/practice/architecture/02.png",
-        "thumb": "images/thumbs/practice/architecture/02.webp",
-        "preview": "images/previews/practice/architecture/02.webp",
+        "original": "images/practice/engineering/02.png",
+        "thumb": "images/thumbs/practice/engineering/02.webp",
+        "preview": "images/previews/practice/engineering/02.webp",
         "title": "02"
       },
       {
-        "original": "images/practice/architecture/03.png",
-        "thumb": "images/thumbs/practice/architecture/03.webp",
-        "preview": "images/previews/practice/architecture/03.webp",
+        "original": "images/practice/engineering/03.png",
+        "thumb": "images/thumbs/practice/engineering/03.webp",
+        "preview": "images/previews/practice/engineering/03.webp",
         "title": "03"
       },
       {
-        "original": "images/practice/architecture/04.png",
-        "thumb": "images/thumbs/practice/architecture/04.webp",
-        "preview": "images/previews/practice/architecture/04.webp",
+        "original": "images/practice/engineering/04.png",
+        "thumb": "images/thumbs/practice/engineering/04.webp",
+        "preview": "images/previews/practice/engineering/04.webp",
         "title": "04"
       },
       {
-        "original": "images/practice/architecture/05.png",
-        "thumb": "images/thumbs/practice/architecture/05.webp",
-        "preview": "images/previews/practice/architecture/05.webp",
+        "original": "images/practice/engineering/05.png",
+        "thumb": "images/thumbs/practice/engineering/05.webp",
+        "preview": "images/previews/practice/engineering/05.webp",
         "title": "05"
       },
       {
-        "original": "images/practice/architecture/06.png",
-        "thumb": "images/thumbs/practice/architecture/06.webp",
-        "preview": "images/previews/practice/architecture/06.webp",
+        "original": "images/practice/engineering/06.png",
+        "thumb": "images/thumbs/practice/engineering/06.webp",
+        "preview": "images/previews/practice/engineering/06.webp",
         "title": "06"
       },
       {
-        "original": "images/practice/architecture/07.png",
-        "thumb": "images/thumbs/practice/architecture/07.webp",
-        "preview": "images/previews/practice/architecture/07.webp",
+        "original": "images/practice/engineering/07.png",
+        "thumb": "images/thumbs/practice/engineering/07.webp",
+        "preview": "images/previews/practice/engineering/07.webp",
         "title": "07"
       },
       {
-        "original": "images/practice/architecture/08.png",
-        "thumb": "images/thumbs/practice/architecture/08.webp",
-        "preview": "images/previews/practice/architecture/08.webp",
+        "original": "images/practice/engineering/08.png",
+        "thumb": "images/thumbs/practice/engineering/08.webp",
+        "preview": "images/previews/practice/engineering/08.webp",
         "title": "08"
       },
       {
-        "original": "images/practice/architecture/09.png",
-        "thumb": "images/thumbs/practice/architecture/09.webp",
-        "preview": "images/previews/practice/architecture/09.webp",
+        "original": "images/practice/engineering/09.png",
+        "thumb": "images/thumbs/practice/engineering/09.webp",
+        "preview": "images/previews/practice/engineering/09.webp",
         "title": "09"
       },
       {
-        "original": "images/practice/architecture/11.png",
-        "thumb": "images/thumbs/practice/architecture/11.webp",
-        "preview": "images/previews/practice/architecture/11.webp",
+        "original": "images/practice/engineering/10.png",
+        "thumb": "images/thumbs/practice/engineering/10.webp",
+        "preview": "images/previews/practice/engineering/10.webp",
+        "title": "10"
+      },
+      {
+        "original": "images/practice/engineering/11.png",
+        "thumb": "images/thumbs/practice/engineering/11.webp",
+        "preview": "images/previews/practice/engineering/11.webp",
         "title": "11"
       },
       {
-        "original": "images/practice/architecture/12.png",
-        "thumb": "images/thumbs/practice/architecture/12.webp",
-        "preview": "images/previews/practice/architecture/12.webp",
+        "original": "images/practice/engineering/12.png",
+        "thumb": "images/thumbs/practice/engineering/12.webp",
+        "preview": "images/previews/practice/engineering/12.webp",
         "title": "12"
       },
       {
-        "original": "images/practice/architecture/13.png",
-        "thumb": "images/thumbs/practice/architecture/13.webp",
-        "preview": "images/previews/practice/architecture/13.webp",
+        "original": "images/practice/engineering/13.png",
+        "thumb": "images/thumbs/practice/engineering/13.webp",
+        "preview": "images/previews/practice/engineering/13.webp",
         "title": "13"
       },
       {
-        "original": "images/practice/architecture/14.png",
-        "thumb": "images/thumbs/practice/architecture/14.webp",
-        "preview": "images/previews/practice/architecture/14.webp",
+        "original": "images/practice/engineering/14.png",
+        "thumb": "images/thumbs/practice/engineering/14.webp",
+        "preview": "images/previews/practice/engineering/14.webp",
         "title": "14"
       },
       {
-        "original": "images/practice/architecture/a_detailed_pen_and_wash_architectural_sketch_ink_d.png",
-        "thumb": "images/thumbs/practice/architecture/a_detailed_pen_and_wash_architectural_sketch_ink_d.webp",
-        "preview": "images/previews/practice/architecture/a_detailed_pen_and_wash_architectural_sketch_ink_d.webp",
+        "original": "images/practice/engineering/a_detailed_pen_and_wash_architectural_sketch_ink_d.png",
+        "thumb": "images/thumbs/practice/engineering/a_detailed_pen_and_wash_architectural_sketch_ink_d.webp",
+        "preview": "images/previews/practice/engineering/a_detailed_pen_and_wash_architectural_sketch_ink_d.webp",
         "title": "a detailed pen and wash architectural sketch ink d"
       },
       {
-        "original": "images/practice/architecture/a_watercolor_and_ink_architectural_sketch_painting.png",
-        "thumb": "images/thumbs/practice/architecture/a_watercolor_and_ink_architectural_sketch_painting.webp",
-        "preview": "images/previews/practice/architecture/a_watercolor_and_ink_architectural_sketch_painting.webp",
+        "original": "images/practice/engineering/a_watercolor_and_ink_architectural_sketch_painting.png",
+        "thumb": "images/thumbs/practice/engineering/a_watercolor_and_ink_architectural_sketch_painting.webp",
+        "preview": "images/previews/practice/engineering/a_watercolor_and_ink_architectural_sketch_painting.webp",
         "title": "a watercolor and ink architectural sketch painting"
       },
       {
-        "original": "images/practice/architecture/architectural_corbel_sketch_with_distant_hills.png",
-        "thumb": "images/thumbs/practice/architecture/architectural_corbel_sketch_with_distant_hills.webp",
-        "preview": "images/previews/practice/architecture/architectural_corbel_sketch_with_distant_hills.webp",
+        "original": "images/practice/engineering/architectural_corbel_sketch_with_distant_hills.png",
+        "thumb": "images/thumbs/practice/engineering/architectural_corbel_sketch_with_distant_hills.webp",
+        "preview": "images/previews/practice/engineering/architectural_corbel_sketch_with_distant_hills.webp",
         "title": "architectural corbel sketch with distant hills"
       },
       {
-        "original": "images/practice/architecture/architectural_sketch_of_a_mediterranean_stone_hous.png",
-        "thumb": "images/thumbs/practice/architecture/architectural_sketch_of_a_mediterranean_stone_hous.webp",
-        "preview": "images/previews/practice/architecture/architectural_sketch_of_a_mediterranean_stone_hous.webp",
+        "original": "images/practice/engineering/architectural_sketch_of_a_mediterranean_stone_hous.png",
+        "thumb": "images/thumbs/practice/engineering/architectural_sketch_of_a_mediterranean_stone_hous.webp",
+        "preview": "images/previews/practice/engineering/architectural_sketch_of_a_mediterranean_stone_hous.webp",
         "title": "architectural sketch of a mediterranean stone hous"
       },
       {
-        "original": "images/practice/architecture/mediterranean_villa_architectural_sketch.png",
-        "thumb": "images/thumbs/practice/architecture/mediterranean_villa_architectural_sketch.webp",
-        "preview": "images/previews/practice/architecture/mediterranean_villa_architectural_sketch.webp",
+        "original": "images/practice/engineering/mediterranean_villa_architectural_sketch.png",
+        "thumb": "images/thumbs/practice/engineering/mediterranean_villa_architectural_sketch.webp",
+        "preview": "images/previews/practice/engineering/mediterranean_villa_architectural_sketch.webp",
         "title": "mediterranean villa architectural sketch"
       },
       {
-        "original": "images/practice/architecture/Nohad render 01.png",
-        "thumb": "images/thumbs/practice/architecture/Nohad render 01.webp",
-        "preview": "images/previews/practice/architecture/Nohad render 01.webp",
+        "original": "images/practice/engineering/Nohad render 01.png",
+        "thumb": "images/thumbs/practice/engineering/Nohad render 01.webp",
+        "preview": "images/previews/practice/engineering/Nohad render 01.webp",
         "title": "Nohad render 01"
       },
       {
-        "original": "images/practice/architecture/terracotta_roofed_stone_villa_sketch.png",
-        "thumb": "images/thumbs/practice/architecture/terracotta_roofed_stone_villa_sketch.webp",
-        "preview": "images/previews/practice/architecture/terracotta_roofed_stone_villa_sketch.webp",
+        "original": "images/practice/engineering/terracotta_roofed_stone_villa_sketch.png",
+        "thumb": "images/thumbs/practice/engineering/terracotta_roofed_stone_villa_sketch.webp",
+        "preview": "images/previews/practice/engineering/terracotta_roofed_stone_villa_sketch.webp",
         "title": "terracotta roofed stone villa sketch"
       },
       {
-        "original": "images/practice/architecture/Visualization_01.jpg",
-        "thumb": "images/thumbs/practice/architecture/Visualization_01.webp",
-        "preview": "images/previews/practice/architecture/Visualization_01.webp",
+        "original": "images/practice/engineering/Visualization_01.jpg",
+        "thumb": "images/thumbs/practice/engineering/Visualization_01.webp",
+        "preview": "images/previews/practice/engineering/Visualization_01.webp",
         "title": "Visualization 01"
       },
       {
-        "original": "images/practice/architecture/Visualization_16.jpg",
-        "thumb": "images/thumbs/practice/architecture/Visualization_16.webp",
-        "preview": "images/previews/practice/architecture/Visualization_16.webp",
+        "original": "images/practice/engineering/Visualization_16.jpg",
+        "thumb": "images/thumbs/practice/engineering/Visualization_16.webp",
+        "preview": "images/previews/practice/engineering/Visualization_16.webp",
         "title": "Visualization 16"
       },
       {
-        "original": "images/practice/architecture/Visualization_21.jpg",
-        "thumb": "images/thumbs/practice/architecture/Visualization_21.webp",
-        "preview": "images/previews/practice/architecture/Visualization_21.webp",
+        "original": "images/practice/engineering/Visualization_21.jpg",
+        "thumb": "images/thumbs/practice/engineering/Visualization_21.webp",
+        "preview": "images/previews/practice/engineering/Visualization_21.webp",
         "title": "Visualization 21"
       }
     ],
@@ -486,39 +492,39 @@ window.HM_GALLERY_DATA = {
     ],
     "graphic-design": [
       {
-        "original": "images/practice/graphic/0ea3fa89-b719-40a0-bd37-df663a2dc50c.png",
-        "thumb": "images/thumbs/practice/graphic/0ea3fa89-b719-40a0-bd37-df663a2dc50c.webp",
-        "preview": "images/previews/practice/graphic/0ea3fa89-b719-40a0-bd37-df663a2dc50c.webp",
+        "original": "images/practice/graphic-design/0ea3fa89-b719-40a0-bd37-df663a2dc50c.png",
+        "thumb": "images/thumbs/practice/graphic-design/0ea3fa89-b719-40a0-bd37-df663a2dc50c.webp",
+        "preview": "images/previews/practice/graphic-design/0ea3fa89-b719-40a0-bd37-df663a2dc50c.webp",
         "title": "ea3fa89 b719 40a0 bd37 df663a2dc50c"
       },
       {
-        "original": "images/practice/graphic/733c36aa-bfff-4081-8a8a-310a2c846985.png",
-        "thumb": "images/thumbs/practice/graphic/733c36aa-bfff-4081-8a8a-310a2c846985.webp",
-        "preview": "images/previews/practice/graphic/733c36aa-bfff-4081-8a8a-310a2c846985.webp",
+        "original": "images/practice/graphic-design/733c36aa-bfff-4081-8a8a-310a2c846985.png",
+        "thumb": "images/thumbs/practice/graphic-design/733c36aa-bfff-4081-8a8a-310a2c846985.webp",
+        "preview": "images/previews/practice/graphic-design/733c36aa-bfff-4081-8a8a-310a2c846985.webp",
         "title": "c36aa bfff 4081 8a8a 310a2c846985"
       },
       {
-        "original": "images/practice/graphic/26594ad7-fa53-41e9-a4a7-b913fc515e30.png",
-        "thumb": "images/thumbs/practice/graphic/26594ad7-fa53-41e9-a4a7-b913fc515e30.webp",
-        "preview": "images/previews/practice/graphic/26594ad7-fa53-41e9-a4a7-b913fc515e30.webp",
+        "original": "images/practice/graphic-design/26594ad7-fa53-41e9-a4a7-b913fc515e30.png",
+        "thumb": "images/thumbs/practice/graphic-design/26594ad7-fa53-41e9-a4a7-b913fc515e30.webp",
+        "preview": "images/previews/practice/graphic-design/26594ad7-fa53-41e9-a4a7-b913fc515e30.webp",
         "title": "ad7 fa53 41e9 a4a7 b913fc515e30"
       },
       {
-        "original": "images/practice/graphic/a_high_resolution_portrait_illustration_in_a_warm.png",
-        "thumb": "images/thumbs/practice/graphic/a_high_resolution_portrait_illustration_in_a_warm.webp",
-        "preview": "images/previews/practice/graphic/a_high_resolution_portrait_illustration_in_a_warm.webp",
+        "original": "images/practice/graphic-design/a_high_resolution_portrait_illustration_in_a_warm.png",
+        "thumb": "images/thumbs/practice/graphic-design/a_high_resolution_portrait_illustration_in_a_warm.webp",
+        "preview": "images/previews/practice/graphic-design/a_high_resolution_portrait_illustration_in_a_warm.webp",
         "title": "a high resolution portrait illustration in a warm"
       },
       {
-        "original": "images/practice/graphic/cc637936-32c3-4ac1-939a-7ad2967c8ea8.png",
-        "thumb": "images/thumbs/practice/graphic/cc637936-32c3-4ac1-939a-7ad2967c8ea8.webp",
-        "preview": "images/previews/practice/graphic/cc637936-32c3-4ac1-939a-7ad2967c8ea8.webp",
+        "original": "images/practice/graphic-design/cc637936-32c3-4ac1-939a-7ad2967c8ea8.png",
+        "thumb": "images/thumbs/practice/graphic-design/cc637936-32c3-4ac1-939a-7ad2967c8ea8.webp",
+        "preview": "images/previews/practice/graphic-design/cc637936-32c3-4ac1-939a-7ad2967c8ea8.webp",
         "title": "cc637936 32c3 4ac1 939a 7ad2967c8ea8"
       },
       {
-        "original": "images/practice/graphic/d45df67a-325e-4a61-bdbd-bb0257448a5e.png",
-        "thumb": "images/thumbs/practice/graphic/d45df67a-325e-4a61-bdbd-bb0257448a5e.webp",
-        "preview": "images/previews/practice/graphic/d45df67a-325e-4a61-bdbd-bb0257448a5e.webp",
+        "original": "images/practice/graphic-design/d45df67a-325e-4a61-bdbd-bb0257448a5e.png",
+        "thumb": "images/thumbs/practice/graphic-design/d45df67a-325e-4a61-bdbd-bb0257448a5e.webp",
+        "preview": "images/previews/practice/graphic-design/d45df67a-325e-4a61-bdbd-bb0257448a5e.webp",
         "title": "d45df67a 325e 4a61 bdbd bb0257448a5e"
       }
     ],
@@ -634,117 +640,117 @@ window.HM_GALLERY_DATA = {
     ],
     "training": [
       {
-        "original": "images/education/01-capsat-exhibition.jpg",
-        "thumb": "images/thumbs/education/01-capsat-exhibition.webp",
-        "preview": "images/previews/education/01-capsat-exhibition.webp",
+        "original": "images/practice/training/01-capsat-exhibition.jpg",
+        "thumb": "images/thumbs/practice/training/01-capsat-exhibition.webp",
+        "preview": "images/previews/practice/training/01-capsat-exhibition.webp",
         "title": "capsat exhibition"
       },
       {
-        "original": "images/education/02-media-exhibition.jpg",
-        "thumb": "images/thumbs/education/02-media-exhibition.webp",
-        "preview": "images/previews/education/02-media-exhibition.webp",
+        "original": "images/practice/training/02-media-exhibition.jpg",
+        "thumb": "images/thumbs/practice/training/02-media-exhibition.webp",
+        "preview": "images/previews/practice/training/02-media-exhibition.webp",
         "title": "media exhibition"
       },
       {
-        "original": "images/education/03-adms-training.jpg",
-        "thumb": "images/thumbs/education/03-adms-training.webp",
-        "preview": "images/previews/education/03-adms-training.webp",
+        "original": "images/practice/training/03-adms-training.jpg",
+        "thumb": "images/thumbs/practice/training/03-adms-training.webp",
+        "preview": "images/previews/practice/training/03-adms-training.webp",
         "title": "adms training"
       },
       {
-        "original": "images/education/04-adms-certificate.jpg",
-        "thumb": "images/thumbs/education/04-adms-certificate.webp",
-        "preview": "images/previews/education/04-adms-certificate.webp",
+        "original": "images/practice/training/04-adms-certificate.jpg",
+        "thumb": "images/thumbs/practice/training/04-adms-certificate.webp",
+        "preview": "images/previews/practice/training/04-adms-certificate.webp",
         "title": "adms certificate"
       },
       {
-        "original": "images/education/05-adms-group.jpg",
-        "thumb": "images/thumbs/education/05-adms-group.webp",
-        "preview": "images/previews/education/05-adms-group.webp",
+        "original": "images/practice/training/05-adms-group.jpg",
+        "thumb": "images/thumbs/practice/training/05-adms-group.webp",
+        "preview": "images/previews/practice/training/05-adms-group.webp",
         "title": "adms group"
       },
       {
-        "original": "images/education/06-training-2004.jpg",
-        "thumb": "images/thumbs/education/06-training-2004.webp",
-        "preview": "images/previews/education/06-training-2004.webp",
+        "original": "images/practice/training/06-training-2004.jpg",
+        "thumb": "images/thumbs/practice/training/06-training-2004.webp",
+        "preview": "images/previews/practice/training/06-training-2004.webp",
         "title": "training 2004"
       },
       {
-        "original": "images/education/07-training-2005.jpg",
-        "thumb": "images/thumbs/education/07-training-2005.webp",
-        "preview": "images/previews/education/07-training-2005.webp",
+        "original": "images/practice/training/07-training-2005.jpg",
+        "thumb": "images/thumbs/practice/training/07-training-2005.webp",
+        "preview": "images/previews/practice/training/07-training-2005.webp",
         "title": "training 2005"
       },
       {
-        "original": "images/education/08-adobe-workshop.jpg",
-        "thumb": "images/thumbs/education/08-adobe-workshop.webp",
-        "preview": "images/previews/education/08-adobe-workshop.webp",
+        "original": "images/practice/training/08-adobe-workshop.jpg",
+        "thumb": "images/thumbs/practice/training/08-adobe-workshop.webp",
+        "preview": "images/previews/practice/training/08-adobe-workshop.webp",
         "title": "adobe workshop"
       },
       {
-        "original": "images/education/09-after-effects-class.jpg",
-        "thumb": "images/thumbs/education/09-after-effects-class.webp",
-        "preview": "images/previews/education/09-after-effects-class.webp",
+        "original": "images/practice/training/09-after-effects-class.jpg",
+        "thumb": "images/thumbs/practice/training/09-after-effects-class.webp",
+        "preview": "images/previews/practice/training/09-after-effects-class.webp",
         "title": "after effects class"
       },
       {
-        "original": "images/education/10-one-to-one-training.jpg",
-        "thumb": "images/thumbs/education/10-one-to-one-training.webp",
-        "preview": "images/previews/education/10-one-to-one-training.webp",
+        "original": "images/practice/training/10-one-to-one-training.jpg",
+        "thumb": "images/thumbs/practice/training/10-one-to-one-training.webp",
+        "preview": "images/previews/practice/training/10-one-to-one-training.webp",
         "title": "one to one training"
       },
       {
-        "original": "images/education/11-event-demo.jpg",
-        "thumb": "images/thumbs/education/11-event-demo.webp",
-        "preview": "images/previews/education/11-event-demo.webp",
+        "original": "images/practice/training/11-event-demo.jpg",
+        "thumb": "images/thumbs/practice/training/11-event-demo.webp",
+        "preview": "images/previews/practice/training/11-event-demo.webp",
         "title": "event demo"
       },
       {
-        "original": "images/education/12-training-session.jpg",
-        "thumb": "images/thumbs/education/12-training-session.webp",
-        "preview": "images/previews/education/12-training-session.webp",
+        "original": "images/practice/training/12-training-session.jpg",
+        "thumb": "images/thumbs/practice/training/12-training-session.webp",
+        "preview": "images/previews/practice/training/12-training-session.webp",
         "title": "training session"
       },
       {
-        "original": "images/education/13-aramco-training.jpg",
-        "thumb": "images/thumbs/education/13-aramco-training.webp",
-        "preview": "images/previews/education/13-aramco-training.webp",
+        "original": "images/practice/training/13-aramco-training.jpg",
+        "thumb": "images/thumbs/practice/training/13-aramco-training.webp",
+        "preview": "images/previews/practice/training/13-aramco-training.webp",
         "title": "aramco training"
       },
       {
-        "original": "images/education/14-training-group-modern.jpg",
-        "thumb": "images/thumbs/education/14-training-group-modern.webp",
-        "preview": "images/previews/education/14-training-group-modern.webp",
+        "original": "images/practice/training/14-training-group-modern.jpg",
+        "thumb": "images/thumbs/practice/training/14-training-group-modern.webp",
+        "preview": "images/previews/practice/training/14-training-group-modern.webp",
         "title": "training group modern"
       },
       {
-        "original": "images/education/15-class-selfie.jpg",
-        "thumb": "images/thumbs/education/15-class-selfie.webp",
-        "preview": "images/previews/education/15-class-selfie.webp",
+        "original": "images/practice/training/15-class-selfie.jpg",
+        "thumb": "images/thumbs/practice/training/15-class-selfie.webp",
+        "preview": "images/previews/practice/training/15-class-selfie.webp",
         "title": "class selfie"
       },
       {
-        "original": "images/education/16-workshop-collaboration.jpg",
-        "thumb": "images/thumbs/education/16-workshop-collaboration.webp",
-        "preview": "images/previews/education/16-workshop-collaboration.webp",
+        "original": "images/practice/training/16-workshop-collaboration.jpg",
+        "thumb": "images/thumbs/practice/training/16-workshop-collaboration.webp",
+        "preview": "images/previews/practice/training/16-workshop-collaboration.webp",
         "title": "workshop collaboration"
       },
       {
-        "original": "images/education/17-training-group.jpg",
-        "thumb": "images/thumbs/education/17-training-group.webp",
-        "preview": "images/previews/education/17-training-group.webp",
+        "original": "images/practice/training/17-training-group.jpg",
+        "thumb": "images/thumbs/practice/training/17-training-group.webp",
+        "preview": "images/previews/practice/training/17-training-group.webp",
         "title": "training group"
       },
       {
-        "original": "images/education/18-lab-session.jpg",
-        "thumb": "images/thumbs/education/18-lab-session.webp",
-        "preview": "images/previews/education/18-lab-session.webp",
+        "original": "images/practice/training/18-lab-session.jpg",
+        "thumb": "images/thumbs/practice/training/18-lab-session.webp",
+        "preview": "images/previews/practice/training/18-lab-session.webp",
         "title": "lab session"
       },
       {
-        "original": "images/education/19-adobe-session.jpg",
-        "thumb": "images/thumbs/education/19-adobe-session.webp",
-        "preview": "images/previews/education/19-adobe-session.webp",
+        "original": "images/practice/training/19-adobe-session.jpg",
+        "thumb": "images/thumbs/practice/training/19-adobe-session.webp",
+        "preview": "images/previews/practice/training/19-adobe-session.webp",
         "title": "adobe session"
       }
     ]
@@ -752,24 +758,24 @@ window.HM_GALLERY_DATA = {
   "knowledge": {
     "engineering": [
       {
-        "original": "images/knowledge/images.jpeg",
-        "thumb": "images/thumbs/knowledge/images.webp",
-        "preview": "images/previews/knowledge/images.webp",
+        "original": "images/knowledge/engineering/images.jpeg",
+        "thumb": "images/thumbs/knowledge/engineering/images.webp",
+        "preview": "images/previews/knowledge/engineering/images.webp",
         "title": "images"
       }
     ],
     "painting": [],
     "photography": [
       {
-        "original": "images/knowledge/Fixed lighting.jpg",
-        "thumb": "images/thumbs/knowledge/Fixed lighting.webp",
-        "preview": "images/previews/knowledge/Fixed lighting.webp",
+        "original": "images/knowledge/photography/Fixed lighting.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Fixed lighting.webp",
+        "preview": "images/previews/knowledge/photography/Fixed lighting.webp",
         "title": "Fixed lighting"
       },
       {
-        "original": "images/knowledge/Professional_HDR_Photography_Guide.png",
-        "thumb": "images/thumbs/knowledge/Professional_HDR_Photography_Guide.webp",
-        "preview": "images/previews/knowledge/Professional_HDR_Photography_Guide.webp",
+        "original": "images/knowledge/photography/Professional_HDR_Photography_Guide.png",
+        "thumb": "images/thumbs/knowledge/photography/Professional_HDR_Photography_Guide.webp",
+        "preview": "images/previews/knowledge/photography/Professional_HDR_Photography_Guide.webp",
         "title": "Professional HDR Photography Guide"
       }
     ],
