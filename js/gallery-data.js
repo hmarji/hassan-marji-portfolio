@@ -694,12 +694,6 @@ window.HM_GALLERY_DATA = {
         "title": "IMG 0966"
       },
       {
-        "original": "images/practice/training/IMG_0978.JPG",
-        "thumb": "images/thumbs/practice/training/IMG_0978.webp",
-        "preview": "images/previews/practice/training/IMG_0978.webp",
-        "title": "IMG 0978"
-      },
-      {
         "original": "images/practice/training/IMGP8019.JPG",
         "thumb": "images/thumbs/practice/training/IMGP8019.webp",
         "preview": "images/previews/practice/training/IMGP8019.webp",
