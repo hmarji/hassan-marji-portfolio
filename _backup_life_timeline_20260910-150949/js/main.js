@@ -458,177 +458,37 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   close.addEventListener('click',shut);lb.addEventListener('click',e=>{if(e.target===lb)shut()});window.addEventListener('keydown',e=>{if(e.key==='Escape'&&lb.classList.contains('is-open'))shut()});
 })();
 
-/* HM FINAL — Life Timeline viewer + date/caption metadata */
+/* v1.26 — edge-to-edge Life Timeline navigator */
+(() => {
+  const strip=document.getElementById('lifeStrip'), main=document.getElementById('lifeMainImage'), counter=document.getElementById('lifeCounter');
+  if(!strip||!main)return;
+  const thumbs=[...strip.querySelectorAll('.life-thumb')]; let index=0;
+  function show(i){index=(i+thumbs.length)%thumbs.length;thumbs.forEach((b,n)=>b.classList.toggle('is-active',n===index));const im=thumbs[index].querySelector('img');main.src=im.src.replace('/thumbs/','/previews/');main.alt=im.alt||`Life timeline photograph ${index+1}`;counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(thumbs.length).padStart(2,'0')}`;thumbs[index].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});}
+  thumbs.forEach((b,i)=>b.addEventListener('click',()=>show(i)));document.getElementById('lifePrev')?.addEventListener('click',()=>show(index-1));document.getElementById('lifeNext')?.addEventListener('click',()=>show(index+1));
+  let down=false,startX=0,startScroll=0,moved=false;strip.addEventListener('pointerdown',e=>{down=true;moved=false;startX=e.clientX;startScroll=strip.scrollLeft;strip.setPointerCapture?.(e.pointerId)});strip.addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-startX;if(Math.abs(dx)>4)moved=true;strip.scrollLeft=startScroll-dx});strip.addEventListener('pointerup',()=>{down=false});
+  show(0);
+})();
+
+/* HM PATCH — Timeline thumbnail sync */
 (() => {
   const strip = document.getElementById('lifeStrip');
   const main = document.getElementById('lifeMainImage');
   const counter = document.getElementById('lifeCounter');
-  const dateEl = document.getElementById('lifeDate');
-  const captionEl = document.getElementById('lifeCaption');
-  const prev = document.getElementById('lifePrev');
-  const next = document.getElementById('lifeNext');
-
   if (!strip || !main) return;
-
   const thumbs = [...strip.querySelectorAll('.life-thumb')];
-  if (!thumbs.length) return;
-
-  const metadata = Array.isArray(window.HM_LIFE_TIMELINE)
-    ? window.HM_LIFE_TIMELINE
-    : [];
-
-  const metaByFile = new Map(
-    metadata
-      .filter(item => item && item.file)
-      .map(item => [String(item.file).toLowerCase(), item])
-  );
-
-  const pad = n => String(n).padStart(2, '0');
-
-  const fileFromSrc = src => {
-    const clean = String(src || '').split('?')[0].split('#')[0];
-    return decodeURIComponent(clean.substring(clean.lastIndexOf('/') + 1)).toLowerCase();
-  };
-
-  const toPreview = src => String(src || '').replace('/thumbs/', '/previews/');
-
-  const getMeta = (thumb, i) => {
-    const img = thumb.querySelector('img');
-    const file = fileFromSrc(img?.getAttribute('src') || img?.currentSrc || img?.src);
-    const item = metaByFile.get(file) || {};
-    return {
-      date: String(item.date || '').trim(),
-      caption: String(item.caption || '').trim(),
-      fallbackCaption: `Life timeline photograph ${pad(i + 1)}`
-    };
-  };
-
-  // Add compact date + caption underneath every thumbnail.
-  thumbs.forEach((thumb, i) => {
-    let meta = thumb.querySelector('.life-thumb-meta');
-
-    if (!meta) {
-      meta = document.createElement('span');
-      meta.className = 'life-thumb-meta';
-      meta.innerHTML = `
-        <span class="life-thumb-date"></span>
-        <span class="life-thumb-caption"></span>
-      `;
-      thumb.appendChild(meta);
+  let index = Math.max(0, thumbs.findIndex(b => b.classList.contains('is-active')));
+  const toPreview = src => (src || '').replace('/thumbs/','/previews/');
+  function show(i) {
+    index = (i + thumbs.length) % thumbs.length;
+    thumbs.forEach((b,n)=>b.classList.toggle('is-active', n===index));
+    const im = thumbs[index]?.querySelector('img');
+    if (im) {
+      main.src = toPreview(im.currentSrc || im.src);
+      main.alt = im.alt || `Life timeline photograph ${index+1}`;
     }
-
-    const item = getMeta(thumb, i);
-    meta.querySelector('.life-thumb-date').textContent = item.date || '—';
-    meta.querySelector('.life-thumb-caption').textContent =
-      item.caption || item.fallbackCaption;
-  });
-
-  let index = Math.max(
-    0,
-    thumbs.findIndex(thumb => thumb.classList.contains('is-active'))
-  );
-
-  function show(nextIndex, scrollThumb = true) {
-    index = (nextIndex + thumbs.length) % thumbs.length;
-
-    thumbs.forEach((thumb, i) => {
-      const active = i === index;
-      thumb.classList.toggle('is-active', active);
-      thumb.setAttribute('aria-current', active ? 'true' : 'false');
-    });
-
-    const thumb = thumbs[index];
-    const img = thumb.querySelector('img');
-
-    if (img) {
-      const rawSrc = img.getAttribute('src') || img.currentSrc || img.src;
-      main.src = toPreview(rawSrc);
-      main.alt = img.alt || `Life timeline photograph ${index + 1}`;
-    }
-
-    if (counter) {
-      counter.textContent = `${pad(index + 1)} / ${pad(thumbs.length)}`;
-    }
-
-    const item = getMeta(thumb, index);
-    if (dateEl) dateEl.textContent = item.date || '—';
-    if (captionEl) captionEl.textContent = item.caption || item.fallbackCaption;
-
-    if (scrollThumb) {
-      thumb.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'center'
-      });
-    }
+    if (counter) counter.textContent = `${String(index+1).padStart(2,'0')} / ${String(thumbs.length).padStart(2,'0')}`;
   }
-
-  // Reliable click selection using event delegation.
-  strip.addEventListener('click', event => {
-    const thumb = event.target.closest('.life-thumb');
-    if (!thumb || !strip.contains(thumb)) return;
-    if (strip.dataset.wasDragged === 'true') return;
-
-    event.preventDefault();
-    const i = thumbs.indexOf(thumb);
-    if (i >= 0) show(i, false);
-  });
-
-  prev?.addEventListener('click', () => show(index - 1));
-  next?.addEventListener('click', () => show(index + 1));
-
-  // Drag horizontally WITHOUT pointer capture.
-  // This is the key fix that keeps normal thumbnail clicks alive.
-  let dragging = false;
-  let moved = false;
-  let startX = 0;
-  let startScroll = 0;
-  const dragThreshold = 7;
-
-  strip.addEventListener('pointerdown', event => {
-    if (event.button !== undefined && event.button !== 0) return;
-    dragging = true;
-    moved = false;
-    strip.dataset.wasDragged = 'false';
-    startX = event.clientX;
-    startScroll = strip.scrollLeft;
-  });
-
-  window.addEventListener('pointermove', event => {
-    if (!dragging) return;
-
-    const dx = event.clientX - startX;
-
-    if (!moved && Math.abs(dx) > dragThreshold) {
-      moved = true;
-      strip.classList.add('is-dragging');
-      strip.dataset.wasDragged = 'true';
-    }
-
-    if (moved) {
-      strip.scrollLeft = startScroll - dx;
-      event.preventDefault();
-    }
-  }, { passive: false });
-
-  window.addEventListener('pointerup', () => {
-    if (!dragging) return;
-
-    dragging = false;
-    strip.classList.remove('is-dragging');
-
-    setTimeout(() => {
-      strip.dataset.wasDragged = 'false';
-    }, 80);
-  });
-
-  window.addEventListener('pointercancel', () => {
-    dragging = false;
-    strip.classList.remove('is-dragging');
-    strip.dataset.wasDragged = 'false';
-  });
-
-  show(index, false);
+  thumbs.forEach((b,i)=>b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();show(i);},true));
 })();
 
 /* HM PATCH — Selected Work navigator */
