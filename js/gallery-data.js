@@ -60,6 +60,18 @@ window.HM_GALLERY_DATA = {
         "title": "03"
       },
       {
+        "original": "images/practice/engineering/3f5a2ac9-b86d-4321-8f25-a062ff7c84f3.png",
+        "thumb": "images/thumbs/practice/engineering/3f5a2ac9-b86d-4321-8f25-a062ff7c84f3.webp",
+        "preview": "images/previews/practice/engineering/3f5a2ac9-b86d-4321-8f25-a062ff7c84f3.webp",
+        "title": "f5a2ac9 b86d 4321 8f25 a062ff7c84f3"
+      },
+      {
+        "original": "images/practice/engineering/3f810e12-e7d6-4ce1-b1d9-e60550adf82d.png",
+        "thumb": "images/thumbs/practice/engineering/3f810e12-e7d6-4ce1-b1d9-e60550adf82d.webp",
+        "preview": "images/previews/practice/engineering/3f810e12-e7d6-4ce1-b1d9-e60550adf82d.webp",
+        "title": "f810e12 e7d6 4ce1 b1d9 e60550adf82d"
+      },
+      {
         "original": "images/practice/engineering/04.png",
         "thumb": "images/thumbs/practice/engineering/04.webp",
         "preview": "images/previews/practice/engineering/04.webp",
@@ -70,6 +82,12 @@ window.HM_GALLERY_DATA = {
         "thumb": "images/thumbs/practice/engineering/05.webp",
         "preview": "images/previews/practice/engineering/05.webp",
         "title": "05"
+      },
+      {
+        "original": "images/practice/engineering/5cd3406b-488a-441f-a1e3-684774a4b5bb.png",
+        "thumb": "images/thumbs/practice/engineering/5cd3406b-488a-441f-a1e3-684774a4b5bb.webp",
+        "preview": "images/previews/practice/engineering/5cd3406b-488a-441f-a1e3-684774a4b5bb.webp",
+        "title": "cd3406b 488a 441f a1e3 684774a4b5bb"
       },
       {
         "original": "images/practice/engineering/06.png",
@@ -96,12 +114,6 @@ window.HM_GALLERY_DATA = {
         "title": "09"
       },
       {
-        "original": "images/practice/engineering/10.png",
-        "thumb": "images/thumbs/practice/engineering/10.webp",
-        "preview": "images/previews/practice/engineering/10.webp",
-        "title": "10"
-      },
-      {
         "original": "images/practice/engineering/11.png",
         "thumb": "images/thumbs/practice/engineering/11.webp",
         "preview": "images/previews/practice/engineering/11.webp",
@@ -124,6 +136,12 @@ window.HM_GALLERY_DATA = {
         "thumb": "images/thumbs/practice/engineering/14.webp",
         "preview": "images/previews/practice/engineering/14.webp",
         "title": "14"
+      },
+      {
+        "original": "images/practice/engineering/24aca280-4c20-4bbe-8ffb-ae9f9c807673.png",
+        "thumb": "images/thumbs/practice/engineering/24aca280-4c20-4bbe-8ffb-ae9f9c807673.webp",
+        "preview": "images/previews/practice/engineering/24aca280-4c20-4bbe-8ffb-ae9f9c807673.webp",
+        "title": "aca280 4c20 4bbe 8ffb ae9f9c807673"
       },
       {
         "original": "images/practice/engineering/a_detailed_pen_and_wash_architectural_sketch_ink_d.png",
@@ -150,22 +168,10 @@ window.HM_GALLERY_DATA = {
         "title": "architectural sketch of a mediterranean stone hous"
       },
       {
-        "original": "images/practice/engineering/mediterranean_villa_architectural_sketch.png",
-        "thumb": "images/thumbs/practice/engineering/mediterranean_villa_architectural_sketch.webp",
-        "preview": "images/previews/practice/engineering/mediterranean_villa_architectural_sketch.webp",
-        "title": "mediterranean villa architectural sketch"
-      },
-      {
         "original": "images/practice/engineering/Nohad render 01.png",
         "thumb": "images/thumbs/practice/engineering/Nohad render 01.webp",
         "preview": "images/previews/practice/engineering/Nohad render 01.webp",
         "title": "Nohad render 01"
-      },
-      {
-        "original": "images/practice/engineering/terracotta_roofed_stone_villa_sketch.png",
-        "thumb": "images/thumbs/practice/engineering/terracotta_roofed_stone_villa_sketch.webp",
-        "preview": "images/previews/practice/engineering/terracotta_roofed_stone_villa_sketch.webp",
-        "title": "terracotta roofed stone villa sketch"
       },
       {
         "original": "images/practice/engineering/Visualization_01.jpg",
@@ -230,6 +236,12 @@ window.HM_GALLERY_DATA = {
         "title": "07"
       },
       {
+        "original": "images/practice/painting/7d995226-096c-4d65-983a-4a4de07af0c3.png",
+        "thumb": "images/thumbs/practice/painting/7d995226-096c-4d65-983a-4a4de07af0c3.webp",
+        "preview": "images/previews/practice/painting/7d995226-096c-4d65-983a-4a4de07af0c3.webp",
+        "title": "d995226 096c 4d65 983a 4a4de07af0c3"
+      },
+      {
         "original": "images/practice/painting/08.png",
         "thumb": "images/thumbs/practice/painting/08.webp",
         "preview": "images/previews/practice/painting/08.webp",
@@ -266,18 +278,6 @@ window.HM_GALLERY_DATA = {
         "title": "13"
       },
       {
-        "original": "images/practice/painting/14.png",
-        "thumb": "images/thumbs/practice/painting/14.webp",
-        "preview": "images/previews/practice/painting/14.webp",
-        "title": "14"
-      },
-      {
-        "original": "images/practice/painting/15.png",
-        "thumb": "images/thumbs/practice/painting/15.webp",
-        "preview": "images/previews/practice/painting/15.webp",
-        "title": "15"
-      },
-      {
         "original": "images/practice/painting/16.png",
         "thumb": "images/thumbs/practice/painting/16.webp",
         "preview": "images/previews/practice/painting/16.webp",
@@ -290,34 +290,10 @@ window.HM_GALLERY_DATA = {
         "title": "an impasto oil painting palette knife still life"
       },
       {
-        "original": "images/practice/painting/an_impressionistic_oil_painting_style_scene_thick.png",
-        "thumb": "images/thumbs/practice/painting/an_impressionistic_oil_painting_style_scene_thick.webp",
-        "preview": "images/previews/practice/painting/an_impressionistic_oil_painting_style_scene_thick.webp",
-        "title": "an impressionistic oil painting style scene thick"
-      },
-      {
         "original": "images/practice/painting/contemplative_ink_wash_portrait.png",
         "thumb": "images/thumbs/practice/painting/contemplative_ink_wash_portrait.webp",
         "preview": "images/previews/practice/painting/contemplative_ink_wash_portrait.webp",
         "title": "contemplative ink wash portrait"
-      },
-      {
-        "original": "images/practice/painting/dramatic_monochrome_bearded_portrait.png",
-        "thumb": "images/thumbs/practice/painting/dramatic_monochrome_bearded_portrait.webp",
-        "preview": "images/previews/practice/painting/dramatic_monochrome_bearded_portrait.webp",
-        "title": "dramatic monochrome bearded portrait"
-      },
-      {
-        "original": "images/practice/painting/impressionist_seaside_with_sail_tower.png",
-        "thumb": "images/thumbs/practice/painting/impressionist_seaside_with_sail_tower.webp",
-        "preview": "images/previews/practice/painting/impressionist_seaside_with_sail_tower.webp",
-        "title": "impressionist seaside with sail tower"
-      },
-      {
-        "original": "images/practice/painting/kindly_elder_in_impasto_oils.png",
-        "thumb": "images/thumbs/practice/painting/kindly_elder_in_impasto_oils.webp",
-        "preview": "images/previews/practice/painting/kindly_elder_in_impasto_oils.webp",
-        "title": "kindly elder in impasto oils"
       },
       {
         "original": "images/practice/painting/warm_watercolor_portrait_of_an_elderly_man.png",
@@ -498,16 +474,34 @@ window.HM_GALLERY_DATA = {
         "title": "ea3fa89 b719 40a0 bd37 df663a2dc50c"
       },
       {
-        "original": "images/practice/graphic-design/733c36aa-bfff-4081-8a8a-310a2c846985.png",
-        "thumb": "images/thumbs/practice/graphic-design/733c36aa-bfff-4081-8a8a-310a2c846985.webp",
-        "preview": "images/previews/practice/graphic-design/733c36aa-bfff-4081-8a8a-310a2c846985.webp",
-        "title": "c36aa bfff 4081 8a8a 310a2c846985"
+        "original": "images/practice/graphic-design/2e50432f-e5bb-458f-94f4-30ea63fcc149.png",
+        "thumb": "images/thumbs/practice/graphic-design/2e50432f-e5bb-458f-94f4-30ea63fcc149.webp",
+        "preview": "images/previews/practice/graphic-design/2e50432f-e5bb-458f-94f4-30ea63fcc149.webp",
+        "title": "e50432f e5bb 458f 94f4 30ea63fcc149"
       },
       {
-        "original": "images/practice/graphic-design/26594ad7-fa53-41e9-a4a7-b913fc515e30.png",
-        "thumb": "images/thumbs/practice/graphic-design/26594ad7-fa53-41e9-a4a7-b913fc515e30.webp",
-        "preview": "images/previews/practice/graphic-design/26594ad7-fa53-41e9-a4a7-b913fc515e30.webp",
-        "title": "ad7 fa53 41e9 a4a7 b913fc515e30"
+        "original": "images/practice/graphic-design/5a34ec89-99b4-4587-a50a-4e328ceb43e7.png",
+        "thumb": "images/thumbs/practice/graphic-design/5a34ec89-99b4-4587-a50a-4e328ceb43e7.webp",
+        "preview": "images/previews/practice/graphic-design/5a34ec89-99b4-4587-a50a-4e328ceb43e7.webp",
+        "title": "a34ec89 99b4 4587 a50a 4e328ceb43e7"
+      },
+      {
+        "original": "images/practice/graphic-design/7f7f35d9-283f-4d39-b286-950a3d74b048.png",
+        "thumb": "images/thumbs/practice/graphic-design/7f7f35d9-283f-4d39-b286-950a3d74b048.webp",
+        "preview": "images/previews/practice/graphic-design/7f7f35d9-283f-4d39-b286-950a3d74b048.webp",
+        "title": "f7f35d9 283f 4d39 b286 950a3d74b048"
+      },
+      {
+        "original": "images/practice/graphic-design/256d591b-d101-47f9-bbeb-f04f6dc91558.png",
+        "thumb": "images/thumbs/practice/graphic-design/256d591b-d101-47f9-bbeb-f04f6dc91558.webp",
+        "preview": "images/previews/practice/graphic-design/256d591b-d101-47f9-bbeb-f04f6dc91558.webp",
+        "title": "d591b d101 47f9 bbeb f04f6dc91558"
+      },
+      {
+        "original": "images/practice/graphic-design/45212f37-cabc-4402-bf9c-3ee3c62c64fe.png",
+        "thumb": "images/thumbs/practice/graphic-design/45212f37-cabc-4402-bf9c-3ee3c62c64fe.webp",
+        "preview": "images/previews/practice/graphic-design/45212f37-cabc-4402-bf9c-3ee3c62c64fe.webp",
+        "title": "f37 cabc 4402 bf9c 3ee3c62c64fe"
       },
       {
         "original": "images/practice/graphic-design/a_high_resolution_portrait_illustration_in_a_warm.png",
@@ -516,96 +510,108 @@ window.HM_GALLERY_DATA = {
         "title": "a high resolution portrait illustration in a warm"
       },
       {
-        "original": "images/practice/graphic-design/cc637936-32c3-4ac1-939a-7ad2967c8ea8.png",
-        "thumb": "images/thumbs/practice/graphic-design/cc637936-32c3-4ac1-939a-7ad2967c8ea8.webp",
-        "preview": "images/previews/practice/graphic-design/cc637936-32c3-4ac1-939a-7ad2967c8ea8.webp",
-        "title": "cc637936 32c3 4ac1 939a 7ad2967c8ea8"
+        "original": "images/practice/graphic-design/c5cac2b0-b828-4d75-91dc-7052816545b3.png",
+        "thumb": "images/thumbs/practice/graphic-design/c5cac2b0-b828-4d75-91dc-7052816545b3.webp",
+        "preview": "images/previews/practice/graphic-design/c5cac2b0-b828-4d75-91dc-7052816545b3.webp",
+        "title": "c5cac2b0 b828 4d75 91dc 7052816545b3"
       },
       {
         "original": "images/practice/graphic-design/d45df67a-325e-4a61-bdbd-bb0257448a5e.png",
         "thumb": "images/thumbs/practice/graphic-design/d45df67a-325e-4a61-bdbd-bb0257448a5e.webp",
         "preview": "images/previews/practice/graphic-design/d45df67a-325e-4a61-bdbd-bb0257448a5e.webp",
         "title": "d45df67a 325e 4a61 bdbd bb0257448a5e"
+      },
+      {
+        "original": "images/practice/graphic-design/daceb9aa-ef3d-4e12-ac26-aa5bff2284ae.png",
+        "thumb": "images/thumbs/practice/graphic-design/daceb9aa-ef3d-4e12-ac26-aa5bff2284ae.webp",
+        "preview": "images/previews/practice/graphic-design/daceb9aa-ef3d-4e12-ac26-aa5bff2284ae.webp",
+        "title": "daceb9aa ef3d 4e12 ac26 aa5bff2284ae"
+      },
+      {
+        "original": "images/practice/graphic-design/deb2aa78-fe2d-45d0-92b0-c81708d1b608.png",
+        "thumb": "images/thumbs/practice/graphic-design/deb2aa78-fe2d-45d0-92b0-c81708d1b608.webp",
+        "preview": "images/previews/practice/graphic-design/deb2aa78-fe2d-45d0-92b0-c81708d1b608.webp",
+        "title": "deb2aa78 fe2d 45d0 92b0 c81708d1b608"
       }
     ],
     "animation": [
       {
-        "original": "images/practice/animation/01.svg",
-        "thumb": "images/practice/animation/01.svg",
-        "preview": "images/practice/animation/01.svg",
-        "title": "01"
+        "original": "images/practice/animation/1a358fc90737c667ec9d32a7c72718a8.gif",
+        "thumb": "images/practice/animation/1a358fc90737c667ec9d32a7c72718a8.gif",
+        "preview": "images/practice/animation/1a358fc90737c667ec9d32a7c72718a8.gif",
+        "title": "a358fc90737c667ec9d32a7c72718a8"
       },
       {
-        "original": "images/practice/animation/02.svg",
-        "thumb": "images/practice/animation/02.svg",
-        "preview": "images/practice/animation/02.svg",
-        "title": "02"
+        "original": "images/practice/animation/1ab0f44999aba851b67375646d4a80ce (1).gif",
+        "thumb": "images/practice/animation/1ab0f44999aba851b67375646d4a80ce (1).gif",
+        "preview": "images/practice/animation/1ab0f44999aba851b67375646d4a80ce (1).gif",
+        "title": "ab0f44999aba851b67375646d4a80ce (1)"
       },
       {
-        "original": "images/practice/animation/03.svg",
-        "thumb": "images/practice/animation/03.svg",
-        "preview": "images/practice/animation/03.svg",
-        "title": "03"
+        "original": "images/practice/animation/5e3f2e98cfb305c0ebc92c26e4764065.jpg",
+        "thumb": "images/thumbs/practice/animation/5e3f2e98cfb305c0ebc92c26e4764065.webp",
+        "preview": "images/previews/practice/animation/5e3f2e98cfb305c0ebc92c26e4764065.webp",
+        "title": "e3f2e98cfb305c0ebc92c26e4764065"
       },
       {
-        "original": "images/practice/animation/04.svg",
-        "thumb": "images/practice/animation/04.svg",
-        "preview": "images/practice/animation/04.svg",
-        "title": "04"
+        "original": "images/practice/animation/7eec78590faaea74c61d3d423b3de9ed (1).jpg",
+        "thumb": "images/thumbs/practice/animation/7eec78590faaea74c61d3d423b3de9ed (1).webp",
+        "preview": "images/previews/practice/animation/7eec78590faaea74c61d3d423b3de9ed (1).webp",
+        "title": "eec78590faaea74c61d3d423b3de9ed (1)"
       },
       {
-        "original": "images/practice/animation/05.svg",
-        "thumb": "images/practice/animation/05.svg",
-        "preview": "images/practice/animation/05.svg",
-        "title": "05"
-      },
-      {
-        "original": "images/practice/animation/06.svg",
-        "thumb": "images/practice/animation/06.svg",
-        "preview": "images/practice/animation/06.svg",
-        "title": "06"
-      },
-      {
-        "original": "images/practice/animation/07.svg",
-        "thumb": "images/practice/animation/07.svg",
-        "preview": "images/practice/animation/07.svg",
-        "title": "07"
-      },
-      {
-        "original": "images/practice/animation/08.svg",
-        "thumb": "images/practice/animation/08.svg",
-        "preview": "images/practice/animation/08.svg",
-        "title": "08"
-      },
-      {
-        "original": "images/practice/animation/09.svg",
-        "thumb": "images/practice/animation/09.svg",
-        "preview": "images/practice/animation/09.svg",
-        "title": "09"
-      },
-      {
-        "original": "images/practice/animation/10.svg",
-        "thumb": "images/practice/animation/10.svg",
-        "preview": "images/practice/animation/10.svg",
-        "title": "10"
-      },
-      {
-        "original": "images/practice/animation/11.svg",
-        "thumb": "images/practice/animation/11.svg",
-        "preview": "images/practice/animation/11.svg",
-        "title": "11"
-      },
-      {
-        "original": "images/practice/animation/12.svg",
-        "thumb": "images/practice/animation/12.svg",
-        "preview": "images/practice/animation/12.svg",
-        "title": "12"
+        "original": "images/practice/animation/57f7f8b4fe77846fc9fe48ff0e13f413.jpg",
+        "thumb": "images/thumbs/practice/animation/57f7f8b4fe77846fc9fe48ff0e13f413.webp",
+        "preview": "images/previews/practice/animation/57f7f8b4fe77846fc9fe48ff0e13f413.webp",
+        "title": "f7f8b4fe77846fc9fe48ff0e13f413"
       },
       {
         "original": "images/practice/animation/2425899-walkcycle_side1(1).jpeg",
         "thumb": "images/thumbs/practice/animation/2425899-walkcycle_side1(1).webp",
         "preview": "images/previews/practice/animation/2425899-walkcycle_side1(1).webp",
         "title": "walkcycle side1(1)"
+      },
+      {
+        "original": "images/practice/animation/crow-fly-sequence-black-flying-600nw-2219842119.webp",
+        "thumb": "images/practice/animation/crow-fly-sequence-black-flying-600nw-2219842119.webp",
+        "preview": "images/practice/animation/crow-fly-sequence-black-flying-600nw-2219842119.webp",
+        "title": "crow fly sequence black flying 600nw 2219842119"
+      },
+      {
+        "original": "images/practice/animation/d5bfb8a0fab9c1adbe9cbb90c9030a8c.jpg",
+        "thumb": "images/thumbs/practice/animation/d5bfb8a0fab9c1adbe9cbb90c9030a8c.webp",
+        "preview": "images/previews/practice/animation/d5bfb8a0fab9c1adbe9cbb90c9030a8c.webp",
+        "title": "d5bfb8a0fab9c1adbe9cbb90c9030a8c"
+      },
+      {
+        "original": "images/practice/animation/d48bc71dc5e169d1273fa186bfbebdfe.gif",
+        "thumb": "images/practice/animation/d48bc71dc5e169d1273fa186bfbebdfe.gif",
+        "preview": "images/practice/animation/d48bc71dc5e169d1273fa186bfbebdfe.gif",
+        "title": "d48bc71dc5e169d1273fa186bfbebdfe"
+      },
+      {
+        "original": "images/practice/animation/d7586a9402eade9c9ce84a10fe00490a.jpg",
+        "thumb": "images/thumbs/practice/animation/d7586a9402eade9c9ce84a10fe00490a.webp",
+        "preview": "images/previews/practice/animation/d7586a9402eade9c9ce84a10fe00490a.webp",
+        "title": "d7586a9402eade9c9ce84a10fe00490a"
+      },
+      {
+        "original": "images/practice/animation/dd3e5893a4611a38981b3da113cde967.jpg",
+        "thumb": "images/thumbs/practice/animation/dd3e5893a4611a38981b3da113cde967.webp",
+        "preview": "images/previews/practice/animation/dd3e5893a4611a38981b3da113cde967.webp",
+        "title": "dd3e5893a4611a38981b3da113cde967"
+      },
+      {
+        "original": "images/practice/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.jpg",
+        "thumb": "images/thumbs/practice/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.webp",
+        "preview": "images/previews/practice/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.webp",
+        "title": "f7e7d248c3bfd0e2897c573dce6d3e7c"
+      },
+      {
+        "original": "images/practice/animation/f.jpg",
+        "thumb": "images/thumbs/practice/animation/f.webp",
+        "preview": "images/previews/practice/animation/f.webp",
+        "title": "f"
       },
       {
         "original": "images/practice/animation/Horse runing.webp",
@@ -620,10 +626,10 @@ window.HM_GALLERY_DATA = {
         "title": "Hourse walk"
       },
       {
-        "original": "images/practice/animation/Jump(1).png",
-        "thumb": "images/thumbs/practice/animation/Jump(1).webp",
-        "preview": "images/previews/practice/animation/Jump(1).webp",
-        "title": "Jump(1)"
+        "original": "images/practice/animation/Muybridge_race_horse_animated.webp",
+        "thumb": "images/practice/animation/Muybridge_race_horse_animated.webp",
+        "preview": "images/practice/animation/Muybridge_race_horse_animated.webp",
+        "title": "Muybridge race horse animated"
       },
       {
         "original": "images/practice/animation/richard-williams-run-cycle-copy.jpg",
@@ -752,6 +758,30 @@ window.HM_GALLERY_DATA = {
         "thumb": "images/thumbs/practice/training/19-adobe-session.webp",
         "preview": "images/previews/practice/training/19-adobe-session.webp",
         "title": "adobe session"
+      },
+      {
+        "original": "images/practice/training/IMG_0966.JPG",
+        "thumb": "images/thumbs/practice/training/IMG_0966.webp",
+        "preview": "images/previews/practice/training/IMG_0966.webp",
+        "title": "IMG 0966"
+      },
+      {
+        "original": "images/practice/training/IMG_0978.JPG",
+        "thumb": "images/thumbs/practice/training/IMG_0978.webp",
+        "preview": "images/previews/practice/training/IMG_0978.webp",
+        "title": "IMG 0978"
+      },
+      {
+        "original": "images/practice/training/IMGP8019.JPG",
+        "thumb": "images/thumbs/practice/training/IMGP8019.webp",
+        "preview": "images/previews/practice/training/IMGP8019.webp",
+        "title": "IMGP8019"
+      },
+      {
+        "original": "images/practice/training/IMGP8025.JPG",
+        "thumb": "images/thumbs/practice/training/IMGP8025.webp",
+        "preview": "images/previews/practice/training/IMGP8025.webp",
+        "title": "IMGP8025"
       }
     ]
   },
