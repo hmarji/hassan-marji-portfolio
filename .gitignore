@@ -1,0 +1,11 @@
+# Local Python cache
+__pycache__/
+*.py[cod]
+
+# Local safety backups created by HM Portfolio patch/update tools
+_backup_*/
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
