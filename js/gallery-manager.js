@@ -189,3 +189,21 @@
     render('engineering');
   })();
 })();
+
+/* HM Portfolio — restored full About biography */
+(() => {
+  const biography = document.querySelector('.about-biography');
+  if (!biography) return;
+
+  biography.innerHTML = `
+    <p>Hassan Marji is a multidisciplinary creative professional whose career spans architecture, painting, photography, graphic design, education, and digital media. Born in Lebanon on December 6, 1967, his professional journey has developed at the intersection of artistic expression, design, technology, and communication.</p>
+
+    <p>Over several decades, he has built extensive experience in architecture and visual communication while developing deep expertise in desktop publishing, video production, visual effects, 3D modeling, animation, photography, and digital design. His work includes projects undertaken in Lebanon and internationally, combining creative thinking with technical knowledge across disciplines that are often treated separately.</p>
+
+    <p>Education and professional training have also formed an important part of his career. As a certified instructor for technologies and platforms including Adobe, Autodesk, and Apple, he has delivered specialized training programs for government institutions, television channels, production companies, universities, and other professional organizations.</p>
+
+    <p>What distinguishes Marji's career is not simply the number of fields in which he has worked, but the connections between them. Architecture informs his understanding of space and structure; painting and photography shape his visual language; graphic design strengthens communication; and digital media provides the tools through which these disciplines increasingly converge.</p>
+
+    <p>After decades of professional practice and teaching, he continues to explore new technologies and new ways of working, while maintaining the same underlying interest that has connected his career from the beginning: using creativity, knowledge, and technology to turn ideas into meaningful visual experiences.</p>
+  `;
+})();
