@@ -225,3 +225,65 @@
     <p>After decades of professional practice and teaching, he continues to explore new technologies and new ways of working, while maintaining the same underlying interest that has connected his career from the beginning: using creativity, knowledge, and technology to turn ideas into meaningful visual experiences.</p>
   `;
 })();
+
+/* HM Portfolio — active navigation section */
+(() => {
+  const nav = document.querySelector('.site-nav');
+  if (!nav) return;
+
+  const links = [...nav.querySelectorAll('a[href^="#"]')];
+  const entries = links.map(link => {
+    const id = link.getAttribute('href').slice(1);
+    const target = document.getElementById(id);
+    return target ? { link, target } : null;
+  }).filter(Boolean);
+  if (!entries.length) return;
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .site-nav a.is-current::after { width: 100% !important; }
+    .site-nav a.is-current { opacity: 1 !important; }
+  `;
+  document.head.appendChild(style);
+
+  function activate(link) {
+    links.forEach(item => {
+      const current = item === link;
+      item.classList.toggle('is-current', current);
+      if (current) item.setAttribute('aria-current', 'location');
+      else item.removeAttribute('aria-current');
+    });
+  }
+
+  function updateCurrent() {
+    const probe = Math.min(220, Math.max(96, window.innerHeight * 0.24));
+    let current = entries[0];
+
+    for (const entry of entries) {
+      if (entry.target.getBoundingClientRect().top <= probe) current = entry;
+    }
+
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atBottom) current = entries[entries.length - 1];
+
+    activate(current.link);
+  }
+
+  links.forEach(link => link.addEventListener('click', () => activate(link)));
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      updateCurrent();
+      ticking = false;
+    });
+  }, { passive: true });
+
+  window.addEventListener('resize', updateCurrent);
+  window.addEventListener('hashchange', updateCurrent);
+  window.addEventListener('load', updateCurrent, { once: true });
+  window.addEventListener('pageshow', updateCurrent);
+  updateCurrent();
+})();
