@@ -548,30 +548,6 @@ window.HM_GALLERY_DATA = {
         "title": "ab0f44999aba851b67375646d4a80ce (1)"
       },
       {
-        "original": "images/practice/animation/5e3f2e98cfb305c0ebc92c26e4764065.jpg",
-        "thumb": "images/thumbs/practice/animation/5e3f2e98cfb305c0ebc92c26e4764065.webp",
-        "preview": "images/previews/practice/animation/5e3f2e98cfb305c0ebc92c26e4764065.webp",
-        "title": "e3f2e98cfb305c0ebc92c26e4764065"
-      },
-      {
-        "original": "images/practice/animation/7eec78590faaea74c61d3d423b3de9ed (1).jpg",
-        "thumb": "images/thumbs/practice/animation/7eec78590faaea74c61d3d423b3de9ed (1).webp",
-        "preview": "images/previews/practice/animation/7eec78590faaea74c61d3d423b3de9ed (1).webp",
-        "title": "eec78590faaea74c61d3d423b3de9ed (1)"
-      },
-      {
-        "original": "images/practice/animation/57f7f8b4fe77846fc9fe48ff0e13f413.jpg",
-        "thumb": "images/thumbs/practice/animation/57f7f8b4fe77846fc9fe48ff0e13f413.webp",
-        "preview": "images/previews/practice/animation/57f7f8b4fe77846fc9fe48ff0e13f413.webp",
-        "title": "f7f8b4fe77846fc9fe48ff0e13f413"
-      },
-      {
-        "original": "images/practice/animation/2425899-walkcycle_side1(1).jpeg",
-        "thumb": "images/thumbs/practice/animation/2425899-walkcycle_side1(1).webp",
-        "preview": "images/previews/practice/animation/2425899-walkcycle_side1(1).webp",
-        "title": "walkcycle side1(1)"
-      },
-      {
         "original": "images/practice/animation/crow-fly-sequence-black-flying-600nw-2219842119.webp",
         "thumb": "images/practice/animation/crow-fly-sequence-black-flying-600nw-2219842119.webp",
         "preview": "images/practice/animation/crow-fly-sequence-black-flying-600nw-2219842119.webp",
@@ -590,30 +566,6 @@ window.HM_GALLERY_DATA = {
         "title": "d48bc71dc5e169d1273fa186bfbebdfe"
       },
       {
-        "original": "images/practice/animation/d7586a9402eade9c9ce84a10fe00490a.jpg",
-        "thumb": "images/thumbs/practice/animation/d7586a9402eade9c9ce84a10fe00490a.webp",
-        "preview": "images/previews/practice/animation/d7586a9402eade9c9ce84a10fe00490a.webp",
-        "title": "d7586a9402eade9c9ce84a10fe00490a"
-      },
-      {
-        "original": "images/practice/animation/dd3e5893a4611a38981b3da113cde967.jpg",
-        "thumb": "images/thumbs/practice/animation/dd3e5893a4611a38981b3da113cde967.webp",
-        "preview": "images/previews/practice/animation/dd3e5893a4611a38981b3da113cde967.webp",
-        "title": "dd3e5893a4611a38981b3da113cde967"
-      },
-      {
-        "original": "images/practice/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.jpg",
-        "thumb": "images/thumbs/practice/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.webp",
-        "preview": "images/previews/practice/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.webp",
-        "title": "f7e7d248c3bfd0e2897c573dce6d3e7c"
-      },
-      {
-        "original": "images/practice/animation/f.jpg",
-        "thumb": "images/thumbs/practice/animation/f.webp",
-        "preview": "images/previews/practice/animation/f.webp",
-        "title": "f"
-      },
-      {
         "original": "images/practice/animation/Horse runing.webp",
         "thumb": "images/practice/animation/Horse runing.webp",
         "preview": "images/practice/animation/Horse runing.webp",
@@ -630,18 +582,6 @@ window.HM_GALLERY_DATA = {
         "thumb": "images/practice/animation/Muybridge_race_horse_animated.webp",
         "preview": "images/practice/animation/Muybridge_race_horse_animated.webp",
         "title": "Muybridge race horse animated"
-      },
-      {
-        "original": "images/practice/animation/richard-williams-run-cycle-copy.jpg",
-        "thumb": "images/thumbs/practice/animation/richard-williams-run-cycle-copy.webp",
-        "preview": "images/previews/practice/animation/richard-williams-run-cycle-copy.webp",
-        "title": "richard williams run cycle copy"
-      },
-      {
-        "original": "images/practice/animation/walk_cycle(1).jpg",
-        "thumb": "images/thumbs/practice/animation/walk_cycle(1).webp",
-        "preview": "images/previews/practice/animation/walk_cycle(1).webp",
-        "title": "walk cycle(1)"
       }
     ],
     "training": [
@@ -788,14 +728,381 @@ window.HM_GALLERY_DATA = {
   "knowledge": {
     "engineering": [
       {
-        "original": "images/knowledge/engineering/images.jpeg",
-        "thumb": "images/thumbs/knowledge/engineering/images.webp",
-        "preview": "images/previews/knowledge/engineering/images.webp",
-        "title": "images"
+        "original": "images/knowledge/engineering/2d5ab175b179fc583094f1d447eb494f.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/2d5ab175b179fc583094f1d447eb494f.webp",
+        "preview": "images/previews/knowledge/engineering/2d5ab175b179fc583094f1d447eb494f.webp",
+        "title": "d5ab175b179fc583094f1d447eb494f"
+      },
+      {
+        "original": "images/knowledge/engineering/4e8af36c0632200651166bcc264bbb5a.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/4e8af36c0632200651166bcc264bbb5a.webp",
+        "preview": "images/previews/knowledge/engineering/4e8af36c0632200651166bcc264bbb5a.webp",
+        "title": "e8af36c0632200651166bcc264bbb5a"
+      },
+      {
+        "original": "images/knowledge/engineering/8c93d405c983afe0947221b6bef31fcf.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/8c93d405c983afe0947221b6bef31fcf.webp",
+        "preview": "images/previews/knowledge/engineering/8c93d405c983afe0947221b6bef31fcf.webp",
+        "title": "c93d405c983afe0947221b6bef31fcf"
+      },
+      {
+        "original": "images/knowledge/engineering/12ec81128e7652f4be54af924b92faee.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/12ec81128e7652f4be54af924b92faee.webp",
+        "preview": "images/previews/knowledge/engineering/12ec81128e7652f4be54af924b92faee.webp",
+        "title": "ec81128e7652f4be54af924b92faee"
+      },
+      {
+        "original": "images/knowledge/engineering/88fee278894dc21e198cbee6c8f56247.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/88fee278894dc21e198cbee6c8f56247.webp",
+        "preview": "images/previews/knowledge/engineering/88fee278894dc21e198cbee6c8f56247.webp",
+        "title": "fee278894dc21e198cbee6c8f56247"
+      },
+      {
+        "original": "images/knowledge/engineering/a5f6a8b216549dda935ed6d96415b7ef.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/a5f6a8b216549dda935ed6d96415b7ef.webp",
+        "preview": "images/previews/knowledge/engineering/a5f6a8b216549dda935ed6d96415b7ef.webp",
+        "title": "a5f6a8b216549dda935ed6d96415b7ef"
+      },
+      {
+        "original": "images/knowledge/engineering/a22f49f1cbcf2e14d0a4d79f21cf5cd6.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/a22f49f1cbcf2e14d0a4d79f21cf5cd6.webp",
+        "preview": "images/previews/knowledge/engineering/a22f49f1cbcf2e14d0a4d79f21cf5cd6.webp",
+        "title": "a22f49f1cbcf2e14d0a4d79f21cf5cd6"
+      },
+      {
+        "original": "images/knowledge/engineering/b0efec5388fe4c71286c8d55828475df.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/b0efec5388fe4c71286c8d55828475df.webp",
+        "preview": "images/previews/knowledge/engineering/b0efec5388fe4c71286c8d55828475df.webp",
+        "title": "b0efec5388fe4c71286c8d55828475df"
+      },
+      {
+        "original": "images/knowledge/engineering/c89ad1276bd6dc924d7299d43ab7dca4.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/c89ad1276bd6dc924d7299d43ab7dca4.webp",
+        "preview": "images/previews/knowledge/engineering/c89ad1276bd6dc924d7299d43ab7dca4.webp",
+        "title": "c89ad1276bd6dc924d7299d43ab7dca4"
+      },
+      {
+        "original": "images/knowledge/engineering/ee52fe1e83a52179a9442cf787529c2f.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/ee52fe1e83a52179a9442cf787529c2f.webp",
+        "preview": "images/previews/knowledge/engineering/ee52fe1e83a52179a9442cf787529c2f.webp",
+        "title": "ee52fe1e83a52179a9442cf787529c2f"
+      },
+      {
+        "original": "images/knowledge/engineering/f08d4d8d25b1c2cdaf1471b14d20850e.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/f08d4d8d25b1c2cdaf1471b14d20850e.webp",
+        "preview": "images/previews/knowledge/engineering/f08d4d8d25b1c2cdaf1471b14d20850e.webp",
+        "title": "f08d4d8d25b1c2cdaf1471b14d20850e"
+      },
+      {
+        "original": "images/knowledge/engineering/f600ab6ec29a67dabe00f97e8be0ff08.jpg",
+        "thumb": "images/thumbs/knowledge/engineering/f600ab6ec29a67dabe00f97e8be0ff08.webp",
+        "preview": "images/previews/knowledge/engineering/f600ab6ec29a67dabe00f97e8be0ff08.webp",
+        "title": "f600ab6ec29a67dabe00f97e8be0ff08"
       }
     ],
-    "painting": [],
+    "painting": [
+      {
+        "original": "images/knowledge/painting/0b816c5adc0ca66f2b42d75db86134bb.webp",
+        "thumb": "images/knowledge/painting/0b816c5adc0ca66f2b42d75db86134bb.webp",
+        "preview": "images/knowledge/painting/0b816c5adc0ca66f2b42d75db86134bb.webp",
+        "title": "b816c5adc0ca66f2b42d75db86134bb"
+      },
+      {
+        "original": "images/knowledge/painting/1cc53eefe872ab23ad228724f389f776.jpg",
+        "thumb": "images/thumbs/knowledge/painting/1cc53eefe872ab23ad228724f389f776.webp",
+        "preview": "images/previews/knowledge/painting/1cc53eefe872ab23ad228724f389f776.webp",
+        "title": "cc53eefe872ab23ad228724f389f776"
+      },
+      {
+        "original": "images/knowledge/painting/8c7df04dc3948ddd3ede30cd0d9ba2d1.webp",
+        "thumb": "images/knowledge/painting/8c7df04dc3948ddd3ede30cd0d9ba2d1.webp",
+        "preview": "images/knowledge/painting/8c7df04dc3948ddd3ede30cd0d9ba2d1.webp",
+        "title": "c7df04dc3948ddd3ede30cd0d9ba2d1"
+      },
+      {
+        "original": "images/knowledge/painting/65a00959b64f7c6b72f5075620c07201.jpg",
+        "thumb": "images/thumbs/knowledge/painting/65a00959b64f7c6b72f5075620c07201.webp",
+        "preview": "images/previews/knowledge/painting/65a00959b64f7c6b72f5075620c07201.webp",
+        "title": "a00959b64f7c6b72f5075620c07201"
+      },
+      {
+        "original": "images/knowledge/painting/632b03fe523ce8d265574c85989cfdf2.jpg",
+        "thumb": "images/thumbs/knowledge/painting/632b03fe523ce8d265574c85989cfdf2.webp",
+        "preview": "images/previews/knowledge/painting/632b03fe523ce8d265574c85989cfdf2.webp",
+        "title": "b03fe523ce8d265574c85989cfdf2"
+      },
+      {
+        "original": "images/knowledge/painting/796751fbf9831715f54315763985cf3c.jpg",
+        "thumb": "images/thumbs/knowledge/painting/796751fbf9831715f54315763985cf3c.webp",
+        "preview": "images/previews/knowledge/painting/796751fbf9831715f54315763985cf3c.webp",
+        "title": "fbf9831715f54315763985cf3c"
+      },
+      {
+        "original": "images/knowledge/painting/e2d23fccdcc053f42cf12d4bd54f604a.jpg",
+        "thumb": "images/thumbs/knowledge/painting/e2d23fccdcc053f42cf12d4bd54f604a.webp",
+        "preview": "images/previews/knowledge/painting/e2d23fccdcc053f42cf12d4bd54f604a.webp",
+        "title": "e2d23fccdcc053f42cf12d4bd54f604a"
+      },
+      {
+        "original": "images/knowledge/painting/ef0ec55683742411674afa75e5439733.jpg",
+        "thumb": "images/thumbs/knowledge/painting/ef0ec55683742411674afa75e5439733.webp",
+        "preview": "images/previews/knowledge/painting/ef0ec55683742411674afa75e5439733.webp",
+        "title": "ef0ec55683742411674afa75e5439733"
+      },
+      {
+        "original": "images/knowledge/painting/ef43e24d7b5877f22d66cb9cd71d4b04.webp",
+        "thumb": "images/knowledge/painting/ef43e24d7b5877f22d66cb9cd71d4b04.webp",
+        "preview": "images/knowledge/painting/ef43e24d7b5877f22d66cb9cd71d4b04.webp",
+        "title": "ef43e24d7b5877f22d66cb9cd71d4b04"
+      },
+      {
+        "original": "images/knowledge/painting/f6203b410465391f30e2643519bded72.webp",
+        "thumb": "images/knowledge/painting/f6203b410465391f30e2643519bded72.webp",
+        "preview": "images/knowledge/painting/f6203b410465391f30e2643519bded72.webp",
+        "title": "f6203b410465391f30e2643519bded72"
+      }
+    ],
     "photography": [
+      {
+        "original": "images/knowledge/photography/1-midday.jpg",
+        "thumb": "images/thumbs/knowledge/photography/1-midday.webp",
+        "preview": "images/previews/knowledge/photography/1-midday.webp",
+        "title": "midday"
+      },
+      {
+        "original": "images/knowledge/photography/2-overcast.jpg",
+        "thumb": "images/thumbs/knowledge/photography/2-overcast.webp",
+        "preview": "images/previews/knowledge/photography/2-overcast.webp",
+        "title": "overcast"
+      },
+      {
+        "original": "images/knowledge/photography/2_62c8ae05-36e9-4986-8a93-b579de8b73ae_large.webp",
+        "thumb": "images/knowledge/photography/2_62c8ae05-36e9-4986-8a93-b579de8b73ae_large.webp",
+        "preview": "images/knowledge/photography/2_62c8ae05-36e9-4986-8a93-b579de8b73ae_large.webp",
+        "title": "62c8ae05 36e9 4986 8a93 b579de8b73ae large"
+      },
+      {
+        "original": "images/knowledge/photography/2c2d0c66fa333a82e70af8e4b1dc5b1e.jpg",
+        "thumb": "images/thumbs/knowledge/photography/2c2d0c66fa333a82e70af8e4b1dc5b1e.webp",
+        "preview": "images/previews/knowledge/photography/2c2d0c66fa333a82e70af8e4b1dc5b1e.webp",
+        "title": "c2d0c66fa333a82e70af8e4b1dc5b1e"
+      },
+      {
+        "original": "images/knowledge/photography/3-backlight.jpg",
+        "thumb": "images/thumbs/knowledge/photography/3-backlight.webp",
+        "preview": "images/previews/knowledge/photography/3-backlight.webp",
+        "title": "backlight"
+      },
+      {
+        "original": "images/knowledge/photography/4-low-light (1).jpg",
+        "thumb": "images/thumbs/knowledge/photography/4-low-light (1).webp",
+        "preview": "images/previews/knowledge/photography/4-low-light (1).webp",
+        "title": "low light (1)"
+      },
+      {
+        "original": "images/knowledge/photography/4-low-light.jpg",
+        "thumb": "images/thumbs/knowledge/photography/4-low-light.webp",
+        "preview": "images/previews/knowledge/photography/4-low-light.webp",
+        "title": "low light"
+      },
+      {
+        "original": "images/knowledge/photography/5-golden-hour.jpg",
+        "thumb": "images/thumbs/knowledge/photography/5-golden-hour.webp",
+        "preview": "images/previews/knowledge/photography/5-golden-hour.webp",
+        "title": "golden hour"
+      },
+      {
+        "original": "images/knowledge/photography/5e8c08fa-8c71-4695-b15c-3fb4bf140839.png",
+        "thumb": "images/thumbs/knowledge/photography/5e8c08fa-8c71-4695-b15c-3fb4bf140839.webp",
+        "preview": "images/previews/knowledge/photography/5e8c08fa-8c71-4695-b15c-3fb4bf140839.webp",
+        "title": "e8c08fa 8c71 4695 b15c 3fb4bf140839"
+      },
+      {
+        "original": "images/knowledge/photography/10d39fa65f471405f87a0054be0722c9.webp",
+        "thumb": "images/knowledge/photography/10d39fa65f471405f87a0054be0722c9.webp",
+        "preview": "images/knowledge/photography/10d39fa65f471405f87a0054be0722c9.webp",
+        "title": "d39fa65f471405f87a0054be0722c9"
+      },
+      {
+        "original": "images/knowledge/photography/blue-hour-cityscape-with-buildings-lights-reflecting-river-creating-serene-atmosphere_1162141-66209.avif",
+        "thumb": "images/thumbs/knowledge/photography/blue-hour-cityscape-with-buildings-lights-reflecting-river-creating-serene-atmosphere_1162141-66209.webp",
+        "preview": "images/previews/knowledge/photography/blue-hour-cityscape-with-buildings-lights-reflecting-river-creating-serene-atmosphere_1162141-66209.webp",
+        "title": "blue hour cityscape with buildings lights reflecting river creating serene atmosphere 1162141 66209"
+      },
+      {
+        "original": "images/knowledge/photography/blue-hour-photography-2.webp",
+        "thumb": "images/knowledge/photography/blue-hour-photography-2.webp",
+        "preview": "images/knowledge/photography/blue-hour-photography-2.webp",
+        "title": "blue hour photography 2"
+      },
+      {
+        "original": "images/knowledge/photography/BlueHour19.webp",
+        "thumb": "images/knowledge/photography/BlueHour19.webp",
+        "preview": "images/knowledge/photography/BlueHour19.webp",
+        "title": "BlueHour19"
+      },
+      {
+        "original": "images/knowledge/photography/Boat-At-Noret-Sunrise-End-of-Blue-Hour-Front-Lighting.webp",
+        "thumb": "images/knowledge/photography/Boat-At-Noret-Sunrise-End-of-Blue-Hour-Front-Lighting.webp",
+        "preview": "images/knowledge/photography/Boat-At-Noret-Sunrise-End-of-Blue-Hour-Front-Lighting.webp",
+        "title": "Boat At Noret Sunrise End of Blue Hour Front Lighting"
+      },
+      {
+        "original": "images/knowledge/photography/ChatGPT Image Jun 1, 2026, 03_58_50 PM (1).png",
+        "thumb": "images/thumbs/knowledge/photography/ChatGPT Image Jun 1, 2026, 03_58_50 PM (1).webp",
+        "preview": "images/previews/knowledge/photography/ChatGPT Image Jun 1, 2026, 03_58_50 PM (1).webp",
+        "title": "ChatGPT Image Jun 1, 2026, 03 58 50 PM (1)"
+      },
+      {
+        "original": "images/knowledge/photography/d363ae8096ddc46b2cb6d94e3d003e9e-sd.jpg",
+        "thumb": "images/thumbs/knowledge/photography/d363ae8096ddc46b2cb6d94e3d003e9e-sd.webp",
+        "preview": "images/previews/knowledge/photography/d363ae8096ddc46b2cb6d94e3d003e9e-sd.webp",
+        "title": "d363ae8096ddc46b2cb6d94e3d003e9e sd"
+      },
+      {
+        "original": "images/knowledge/photography/ekhidna-wines-wedding-vineyards.webp",
+        "thumb": "images/knowledge/photography/ekhidna-wines-wedding-vineyards.webp",
+        "preview": "images/knowledge/photography/ekhidna-wines-wedding-vineyards.webp",
+        "title": "ekhidna wines wedding vineyards"
+      },
+      {
+        "original": "images/knowledge/photography/Equine_photographer_Cotswolds_Jo_Hansford_003.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Equine_photographer_Cotswolds_Jo_Hansford_003.webp",
+        "preview": "images/previews/knowledge/photography/Equine_photographer_Cotswolds_Jo_Hansford_003.webp",
+        "title": "Equine photographer Cotswolds Jo Hansford 003"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photo-Eadweard.Muybridge.1878-The-Horse-in-motion-750x468.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photo-Eadweard.Muybridge.1878-The-Horse-in-motion-750x468.webp",
+        "preview": "images/previews/knowledge/photography/famous-photo-Eadweard.Muybridge.1878-The-Horse-in-motion-750x468.webp",
+        "title": "famous photo Eadweard.Muybridge.1878 The Horse in motion 750x468"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Alberto.Korda_.1960.Che_-750x499.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Alberto.Korda_.1960.Che_-750x499.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Alberto.Korda_.1960.Che_-750x499.webp",
+        "title": "famous photographers Alberto.Korda .1960.Che 750x499"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Alfred-Eisenstaedt-1945-v-j-day-times-square-kiss.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Alfred-Eisenstaedt-1945-v-j-day-times-square-kiss.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Alfred-Eisenstaedt-1945-v-j-day-times-square-kiss.webp",
+        "title": "famous photographers Alfred Eisenstaedt 1945 v j day times square kiss"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Alfred-Stieglitz-1907-steerage-750x945.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Alfred-Stieglitz-1907-steerage-750x945.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Alfred-Stieglitz-1907-steerage-750x945.webp",
+        "title": "famous photographers Alfred Stieglitz 1907 steerage 750x945"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Cartier-Bresson-1930-man-jumping-puddle.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Cartier-Bresson-1930-man-jumping-puddle.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Cartier-Bresson-1930-man-jumping-puddle.webp",
+        "title": "famous photographers Cartier Bresson 1930 man jumping puddle"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Eddie-Adams-1968-saigon-execution-750x439.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Eddie-Adams-1968-saigon-execution-750x439.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Eddie-Adams-1968-saigon-execution-750x439.webp",
+        "title": "famous photographers Eddie Adams 1968 saigon execution 750x439"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-James-Nachtwey-1992-famine-somalia-750x502.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-James-Nachtwey-1992-famine-somalia-750x502.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-James-Nachtwey-1992-famine-somalia-750x502.webp",
+        "title": "famous photographers James Nachtwey 1992 famine somalia 750x502"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Joseph-Nicephore-Niepce-1826-view-from-window-750x521.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Joseph-Nicephore-Niepce-1826-view-from-window-750x521.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Joseph-Nicephore-Niepce-1826-view-from-window-750x521.webp",
+        "title": "famous photographers Joseph Nicephore Niepce 1826 view from window 750x521"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Kevin-Carter-1993-child-vulture-750x482.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Kevin-Carter-1993-child-vulture-750x482.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Kevin-Carter-1993-child-vulture-750x482.webp",
+        "title": "famous photographers Kevin Carter 1993 child vulture 750x482"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Lewis-Hine-1908-child-cotton-mill-750x422 (1).jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Lewis-Hine-1908-child-cotton-mill-750x422 (1).webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Lewis-Hine-1908-child-cotton-mill-750x422 (1).webp",
+        "title": "famous photographers Lewis Hine 1908 child cotton mill 750x422 (1)"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Lewis-Hine-1908-child-cotton-mill-750x422.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Lewis-Hine-1908-child-cotton-mill-750x422.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Lewis-Hine-1908-child-cotton-mill-750x422.webp",
+        "title": "famous photographers Lewis Hine 1908 child cotton mill 750x422"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Margaret-Bourke-White-1946-ghandi.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Margaret-Bourke-White-1946-ghandi.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Margaret-Bourke-White-1946-ghandi.webp",
+        "title": "famous photographers Margaret Bourke White 1946 ghandi"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Nick-Ut-1972-vietnam-napalm-girl-750x504.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Nick-Ut-1972-vietnam-napalm-girl-750x504.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Nick-Ut-1972-vietnam-napalm-girl-750x504.webp",
+        "title": "famous photographers Nick Ut 1972 vietnam napalm girl 750x504"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Paul-Strand-1916-blind-woman-750x999.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Paul-Strand-1916-blind-woman-750x999.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Paul-Strand-1916-blind-woman-750x999.webp",
+        "title": "famous photographers Paul Strand 1916 blind woman 750x999"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Philippe.Halsman.1948-salvador-dali-750x581.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Philippe.Halsman.1948-salvador-dali-750x581.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Philippe.Halsman.1948-salvador-dali-750x581.webp",
+        "title": "famous photographers Philippe.Halsman.1948 salvador dali 750x581"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Robert-Capa-1936-falling-soldier-750x529.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Robert-Capa-1936-falling-soldier-750x529.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Robert-Capa-1936-falling-soldier-750x529.webp",
+        "title": "famous photographers Robert Capa 1936 falling soldier 750x529"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Stanley-Forman-1975-falling-fire-escape-745x1023.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Stanley-Forman-1975-falling-fire-escape-745x1023.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Stanley-Forman-1975-falling-fire-escape-745x1023.webp",
+        "title": "famous photographers Stanley Forman 1975 falling fire escape 745x1023"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-W-Eugene-Smith-1948-country-doctor-750x470.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-W-Eugene-Smith-1948-country-doctor-750x470.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-W-Eugene-Smith-1948-country-doctor-750x470.webp",
+        "title": "famous photographers W Eugene Smith 1948 country doctor 750x470"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographers-Yousuf-Karsh-1941-churchill-750x954.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographers-Yousuf-Karsh-1941-churchill-750x954.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographers-Yousuf-Karsh-1941-churchill-750x954.webp",
+        "title": "famous photographers Yousuf Karsh 1941 churchill 750x954"
+      },
+      {
+        "original": "images/knowledge/photography/famous-photographs-Dorothea.Lange_.1936-migrant-mother-750x975.jpg",
+        "thumb": "images/thumbs/knowledge/photography/famous-photographs-Dorothea.Lange_.1936-migrant-mother-750x975.webp",
+        "preview": "images/previews/knowledge/photography/famous-photographs-Dorothea.Lange_.1936-migrant-mother-750x975.webp",
+        "title": "famous photographs Dorothea.Lange .1936 migrant mother 750x975"
+      },
+      {
+        "original": "images/knowledge/photography/featheringreflectedlight.jpg",
+        "thumb": "images/thumbs/knowledge/photography/featheringreflectedlight.webp",
+        "preview": "images/previews/knowledge/photography/featheringreflectedlight.webp",
+        "title": "featheringreflectedlight"
+      },
+      {
+        "original": "images/knowledge/photography/Featured-How-to-remove-harsh-shadows-using-natural-light.webp",
+        "thumb": "images/knowledge/photography/Featured-How-to-remove-harsh-shadows-using-natural-light.webp",
+        "preview": "images/knowledge/photography/Featured-How-to-remove-harsh-shadows-using-natural-light.webp",
+        "title": "Featured How to remove harsh shadows using natural light"
+      },
       {
         "original": "images/knowledge/photography/Fixed lighting.jpg",
         "thumb": "images/thumbs/knowledge/photography/Fixed lighting.webp",
@@ -803,14 +1110,617 @@ window.HM_GALLERY_DATA = {
         "title": "Fixed lighting"
       },
       {
+        "original": "images/knowledge/photography/image3-19.jpeg",
+        "thumb": "images/thumbs/knowledge/photography/image3-19.webp",
+        "preview": "images/previews/knowledge/photography/image3-19.webp",
+        "title": "image3 19"
+      },
+      {
+        "original": "images/knowledge/photography/image-asset.webp",
+        "thumb": "images/knowledge/photography/image-asset.webp",
+        "preview": "images/knowledge/photography/image-asset.webp",
+        "title": "image asset"
+      },
+      {
+        "original": "images/knowledge/photography/IMG_0390-1030x687.jpg",
+        "thumb": "images/thumbs/knowledge/photography/IMG_0390-1030x687.webp",
+        "preview": "images/previews/knowledge/photography/IMG_0390-1030x687.webp",
+        "title": "IMG 0390 1030x687"
+      },
+      {
+        "original": "images/knowledge/photography/indoor-natural-light-photography-202.webp",
+        "thumb": "images/knowledge/photography/indoor-natural-light-photography-202.webp",
+        "preview": "images/knowledge/photography/indoor-natural-light-photography-202.webp",
+        "title": "indoor natural light photography 202"
+      },
+      {
+        "original": "images/knowledge/photography/Italy-2016-July-0391.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Italy-2016-July-0391.webp",
+        "preview": "images/previews/knowledge/photography/Italy-2016-July-0391.webp",
+        "title": "Italy 2016 July 0391"
+      },
+      {
+        "original": "images/knowledge/photography/Lance-By-Avel-Shah-2.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Lance-By-Avel-Shah-2.webp",
+        "preview": "images/previews/knowledge/photography/Lance-By-Avel-Shah-2.webp",
+        "title": "Lance By Avel Shah 2"
+      },
+      {
+        "original": "images/knowledge/photography/Magical-Sunrise-in-Vorupoer-Denmark-Golden-Hour-Side-Lighting.webp",
+        "thumb": "images/knowledge/photography/Magical-Sunrise-in-Vorupoer-Denmark-Golden-Hour-Side-Lighting.webp",
+        "preview": "images/knowledge/photography/Magical-Sunrise-in-Vorupoer-Denmark-Golden-Hour-Side-Lighting.webp",
+        "title": "Magical Sunrise in Vorupoer Denmark Golden Hour Side Lighting"
+      },
+      {
+        "original": "images/knowledge/photography/media_1ff66e273d6a4c7eef05519866810b67c0746b495.jpg",
+        "thumb": "images/thumbs/knowledge/photography/media_1ff66e273d6a4c7eef05519866810b67c0746b495.webp",
+        "preview": "images/previews/knowledge/photography/media_1ff66e273d6a4c7eef05519866810b67c0746b495.webp",
+        "title": "media 1ff66e273d6a4c7eef05519866810b67c0746b495"
+      },
+      {
+        "original": "images/knowledge/photography/media_18b04c6f9d8d1bd4b6b259d61d7ae96910ebaae30.jpeg",
+        "thumb": "images/thumbs/knowledge/photography/media_18b04c6f9d8d1bd4b6b259d61d7ae96910ebaae30.webp",
+        "preview": "images/previews/knowledge/photography/media_18b04c6f9d8d1bd4b6b259d61d7ae96910ebaae30.webp",
+        "title": "media 18b04c6f9d8d1bd4b6b259d61d7ae96910ebaae30"
+      },
+      {
+        "original": "images/knowledge/photography/media_188273a7df3efb9bcf74f4d56ed7f2302da9020ac.jpg",
+        "thumb": "images/thumbs/knowledge/photography/media_188273a7df3efb9bcf74f4d56ed7f2302da9020ac.webp",
+        "preview": "images/previews/knowledge/photography/media_188273a7df3efb9bcf74f4d56ed7f2302da9020ac.webp",
+        "title": "media 188273a7df3efb9bcf74f4d56ed7f2302da9020ac"
+      },
+      {
+        "original": "images/knowledge/photography/midday-photography-harsh-light-2.webp",
+        "thumb": "images/knowledge/photography/midday-photography-harsh-light-2.webp",
+        "preview": "images/knowledge/photography/midday-photography-harsh-light-2.webp",
+        "title": "midday photography harsh light 2"
+      },
+      {
+        "original": "images/knowledge/photography/midday.jpg",
+        "thumb": "images/thumbs/knowledge/photography/midday.webp",
+        "preview": "images/previews/knowledge/photography/midday.webp",
+        "title": "midday"
+      },
+      {
+        "original": "images/knowledge/photography/Natural-Light-in-Landscape-Photography-Light-Color-1.webp",
+        "thumb": "images/knowledge/photography/Natural-Light-in-Landscape-Photography-Light-Color-1.webp",
+        "preview": "images/knowledge/photography/Natural-Light-in-Landscape-Photography-Light-Color-1.webp",
+        "title": "Natural Light in Landscape Photography Light Color 1"
+      },
+      {
+        "original": "images/knowledge/photography/Natural-Light-in-Landscape-Photography-Light-Direction.webp",
+        "thumb": "images/knowledge/photography/Natural-Light-in-Landscape-Photography-Light-Direction.webp",
+        "preview": "images/knowledge/photography/Natural-Light-in-Landscape-Photography-Light-Direction.webp",
+        "title": "Natural Light in Landscape Photography Light Direction"
+      },
+      {
+        "original": "images/knowledge/photography/nbZYKZvgCkTjQFrkCbi48j.jpg",
+        "thumb": "images/thumbs/knowledge/photography/nbZYKZvgCkTjQFrkCbi48j.webp",
+        "preview": "images/previews/knowledge/photography/nbZYKZvgCkTjQFrkCbi48j.webp",
+        "title": "nbZYKZvgCkTjQFrkCbi48j"
+      },
+      {
+        "original": "images/knowledge/photography/people-photography-mistake-5-750px-01-750x500.jpg",
+        "thumb": "images/thumbs/knowledge/photography/people-photography-mistake-5-750px-01-750x500.webp",
+        "preview": "images/previews/knowledge/photography/people-photography-mistake-5-750px-01-750x500.webp",
+        "title": "people photography mistake 5 750px 01 750x500"
+      },
+      {
+        "original": "images/knowledge/photography/pexels-jaime-reimer-12481847_1024x1024.webp",
+        "thumb": "images/knowledge/photography/pexels-jaime-reimer-12481847_1024x1024.webp",
+        "preview": "images/knowledge/photography/pexels-jaime-reimer-12481847_1024x1024.webp",
+        "title": "pexels jaime reimer 12481847 1024x1024"
+      },
+      {
+        "original": "images/knowledge/photography/Photography001.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography001.webp",
+        "preview": "images/previews/knowledge/photography/Photography001.webp",
+        "title": "Photography001"
+      },
+      {
+        "original": "images/knowledge/photography/Photography002.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography002.webp",
+        "preview": "images/previews/knowledge/photography/Photography002.webp",
+        "title": "Photography002"
+      },
+      {
+        "original": "images/knowledge/photography/Photography003.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography003.webp",
+        "preview": "images/previews/knowledge/photography/Photography003.webp",
+        "title": "Photography003"
+      },
+      {
+        "original": "images/knowledge/photography/Photography004.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography004.webp",
+        "preview": "images/previews/knowledge/photography/Photography004.webp",
+        "title": "Photography004"
+      },
+      {
+        "original": "images/knowledge/photography/Photography005.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography005.webp",
+        "preview": "images/previews/knowledge/photography/Photography005.webp",
+        "title": "Photography005"
+      },
+      {
+        "original": "images/knowledge/photography/Photography006.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography006.webp",
+        "preview": "images/previews/knowledge/photography/Photography006.webp",
+        "title": "Photography006"
+      },
+      {
+        "original": "images/knowledge/photography/Photography007.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography007.webp",
+        "preview": "images/previews/knowledge/photography/Photography007.webp",
+        "title": "Photography007"
+      },
+      {
+        "original": "images/knowledge/photography/Photography008.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography008.webp",
+        "preview": "images/previews/knowledge/photography/Photography008.webp",
+        "title": "Photography008"
+      },
+      {
+        "original": "images/knowledge/photography/Photography009.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography009.webp",
+        "preview": "images/previews/knowledge/photography/Photography009.webp",
+        "title": "Photography009"
+      },
+      {
+        "original": "images/knowledge/photography/Photography010.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography010.webp",
+        "preview": "images/previews/knowledge/photography/Photography010.webp",
+        "title": "Photography010"
+      },
+      {
+        "original": "images/knowledge/photography/Photography011.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography011.webp",
+        "preview": "images/previews/knowledge/photography/Photography011.webp",
+        "title": "Photography011"
+      },
+      {
+        "original": "images/knowledge/photography/Photography012.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Photography012.webp",
+        "preview": "images/previews/knowledge/photography/Photography012.webp",
+        "title": "Photography012"
+      },
+      {
+        "original": "images/knowledge/photography/PRO_EDU_Photo_Courses_blog_article_titled_What_is_the_Gold_9b260b38-4f81-46cb-93b3-bafc87efccfbPhotograph.webp",
+        "thumb": "images/knowledge/photography/PRO_EDU_Photo_Courses_blog_article_titled_What_is_the_Gold_9b260b38-4f81-46cb-93b3-bafc87efccfbPhotograph.webp",
+        "preview": "images/knowledge/photography/PRO_EDU_Photo_Courses_blog_article_titled_What_is_the_Gold_9b260b38-4f81-46cb-93b3-bafc87efccfbPhotograph.webp",
+        "title": "PRO EDU Photo Courses blog article titled What is the Gold 9b260b38 4f81 46cb 93b3 bafc87efccfbPhotograph"
+      },
+      {
+        "original": "images/knowledge/photography/PRO_EDU_Photo_Courses_blog_article_titled_What_Is_the_Gold_698666dd-86f9-4ecf-a2d6-7b78c08f7dafPhotograph.webp",
+        "thumb": "images/knowledge/photography/PRO_EDU_Photo_Courses_blog_article_titled_What_Is_the_Gold_698666dd-86f9-4ecf-a2d6-7b78c08f7dafPhotograph.webp",
+        "preview": "images/knowledge/photography/PRO_EDU_Photo_Courses_blog_article_titled_What_Is_the_Gold_698666dd-86f9-4ecf-a2d6-7b78c08f7dafPhotograph.webp",
+        "title": "PRO EDU Photo Courses blog article titled What Is the Gold 698666dd 86f9 4ecf a2d6 7b78c08f7dafPhotograph"
+      },
+      {
         "original": "images/knowledge/photography/Professional_HDR_Photography_Guide.png",
         "thumb": "images/thumbs/knowledge/photography/Professional_HDR_Photography_Guide.webp",
         "preview": "images/previews/knowledge/photography/Professional_HDR_Photography_Guide.webp",
         "title": "Professional HDR Photography Guide"
+      },
+      {
+        "original": "images/knowledge/photography/Rembrandt-Lighting-Setup-and-Examples-for-Photography-and-Film-Self-Portrait-Rembrandt.jpg",
+        "thumb": "images/thumbs/knowledge/photography/Rembrandt-Lighting-Setup-and-Examples-for-Photography-and-Film-Self-Portrait-Rembrandt.webp",
+        "preview": "images/previews/knowledge/photography/Rembrandt-Lighting-Setup-and-Examples-for-Photography-and-Film-Self-Portrait-Rembrandt.webp",
+        "title": "Rembrandt Lighting Setup and Examples for Photography and Film Self Portrait Rembrandt"
+      },
+      {
+        "original": "images/knowledge/photography/Rule of third vs Diagonal triangles.png",
+        "thumb": "images/thumbs/knowledge/photography/Rule of third vs Diagonal triangles.webp",
+        "preview": "images/previews/knowledge/photography/Rule of third vs Diagonal triangles.webp",
+        "title": "Rule of third vs Diagonal triangles"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 070341.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 070341.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 070341.webp",
+        "title": "Screenshot 2026 03 07 070341"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 071510.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 071510.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 071510.webp",
+        "title": "Screenshot 2026 03 07 071510"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 071521.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 071521.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 071521.webp",
+        "title": "Screenshot 2026 03 07 071521"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 071536.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 071536.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 071536.webp",
+        "title": "Screenshot 2026 03 07 071536"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 071551.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 071551.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 071551.webp",
+        "title": "Screenshot 2026 03 07 071551"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 071602.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 071602.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 071602.webp",
+        "title": "Screenshot 2026 03 07 071602"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 071711.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 071711.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 071711.webp",
+        "title": "Screenshot 2026 03 07 071711"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 071831.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 071831.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 071831.webp",
+        "title": "Screenshot 2026 03 07 071831"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 072012.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 072012.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 072012.webp",
+        "title": "Screenshot 2026 03 07 072012"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 072135.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 072135.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 072135.webp",
+        "title": "Screenshot 2026 03 07 072135"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 072244.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 072244.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 072244.webp",
+        "title": "Screenshot 2026 03 07 072244"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 072425.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 072425.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 072425.webp",
+        "title": "Screenshot 2026 03 07 072425"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 072443.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 072443.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 072443.webp",
+        "title": "Screenshot 2026 03 07 072443"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 074443.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 074443.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 074443.webp",
+        "title": "Screenshot 2026 03 07 074443"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 082232.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 082232.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 082232.webp",
+        "title": "Screenshot 2026 03 07 082232"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 082359.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 082359.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 082359.webp",
+        "title": "Screenshot 2026 03 07 082359"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 082604.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 082604.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 082604.webp",
+        "title": "Screenshot 2026 03 07 082604"
+      },
+      {
+        "original": "images/knowledge/photography/Screenshot 2026-03-07 082630.png",
+        "thumb": "images/thumbs/knowledge/photography/Screenshot 2026-03-07 082630.webp",
+        "preview": "images/previews/knowledge/photography/Screenshot 2026-03-07 082630.webp",
+        "title": "Screenshot 2026 03 07 082630"
+      },
+      {
+        "original": "images/knowledge/photography/ShadeVsBacklight_25.png",
+        "thumb": "images/thumbs/knowledge/photography/ShadeVsBacklight_25.webp",
+        "preview": "images/previews/knowledge/photography/ShadeVsBacklight_25.webp",
+        "title": "ShadeVsBacklight 25"
+      },
+      {
+        "original": "images/knowledge/photography/shadow-photography-silhouettes-pexels-soner-arkan.webp",
+        "thumb": "images/knowledge/photography/shadow-photography-silhouettes-pexels-soner-arkan.webp",
+        "preview": "images/knowledge/photography/shadow-photography-silhouettes-pexels-soner-arkan.webp",
+        "title": "shadow photography silhouettes pexels soner arkan"
+      },
+      {
+        "original": "images/knowledge/photography/thumbnail-how-to-plan-for-your-wedding-for-sunset-wedding-translucent-photography-1-scaled.jpg",
+        "thumb": "images/thumbs/knowledge/photography/thumbnail-how-to-plan-for-your-wedding-for-sunset-wedding-translucent-photography-1-scaled.webp",
+        "preview": "images/previews/knowledge/photography/thumbnail-how-to-plan-for-your-wedding-for-sunset-wedding-translucent-photography-1-scaled.webp",
+        "title": "thumbnail how to plan for your wedding for sunset wedding translucent photography 1 scaled"
+      },
+      {
+        "original": "images/knowledge/photography/Understanding the DSLR Camera.png",
+        "thumb": "images/thumbs/knowledge/photography/Understanding the DSLR Camera.webp",
+        "preview": "images/previews/knowledge/photography/Understanding the DSLR Camera.webp",
+        "title": "Understanding the DSLR Camera"
+      },
+      {
+        "original": "images/knowledge/photography/v2.jpeg",
+        "thumb": "images/thumbs/knowledge/photography/v2.webp",
+        "preview": "images/previews/knowledge/photography/v2.webp",
+        "title": "v2"
+      },
+      {
+        "original": "images/knowledge/photography/Vorupoer-Lighthouse-Back-Lighting-End-of-Blue-Hour.webp",
+        "thumb": "images/knowledge/photography/Vorupoer-Lighthouse-Back-Lighting-End-of-Blue-Hour.webp",
+        "preview": "images/knowledge/photography/Vorupoer-Lighthouse-Back-Lighting-End-of-Blue-Hour.webp",
+        "title": "Vorupoer Lighthouse Back Lighting End of Blue Hour"
+      },
+      {
+        "original": "images/knowledge/photography/working-with-shadows-photography-7.jpg",
+        "thumb": "images/thumbs/knowledge/photography/working-with-shadows-photography-7.webp",
+        "preview": "images/previews/knowledge/photography/working-with-shadows-photography-7.webp",
+        "title": "working with shadows photography 7"
+      },
+      {
+        "original": "images/knowledge/photography/wp-2022-08-GoldenHour.5.avif",
+        "thumb": "images/thumbs/knowledge/photography/wp-2022-08-GoldenHour.5.webp",
+        "preview": "images/previews/knowledge/photography/wp-2022-08-GoldenHour.5.webp",
+        "title": "wp 2022 08 GoldenHour.5"
+      },
+      {
+        "original": "images/knowledge/photography/wp-2022-08-GoldenHourFeatured-2.avif",
+        "thumb": "images/thumbs/knowledge/photography/wp-2022-08-GoldenHourFeatured-2.webp",
+        "preview": "images/previews/knowledge/photography/wp-2022-08-GoldenHourFeatured-2.webp",
+        "title": "wp 2022 08 GoldenHourFeatured 2"
       }
     ],
-    "graphic-design": [],
-    "animation": [],
-    "training": []
+    "graphic-design": [
+      {
+        "original": "images/knowledge/graphic-design/cdf94cbb5f46c7b9379dc71176664c64.jpg",
+        "thumb": "images/thumbs/knowledge/graphic-design/cdf94cbb5f46c7b9379dc71176664c64.webp",
+        "preview": "images/previews/knowledge/graphic-design/cdf94cbb5f46c7b9379dc71176664c64.webp",
+        "title": "cdf94cbb5f46c7b9379dc71176664c64"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Color Combination.jpg",
+        "thumb": "images/thumbs/knowledge/graphic-design/Color Combination.webp",
+        "preview": "images/previews/knowledge/graphic-design/Color Combination.webp",
+        "title": "Color Combination"
+      },
+      {
+        "original": "images/knowledge/graphic-design/IMG_0830 - Copy.PNG",
+        "thumb": "images/thumbs/knowledge/graphic-design/IMG_0830 - Copy.webp",
+        "preview": "images/previews/knowledge/graphic-design/IMG_0830 - Copy.webp",
+        "title": "IMG 0830 Copy"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054305.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054305.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054305.webp",
+        "title": "Screenshot 2026 03 10 054305"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054317.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054317.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054317.webp",
+        "title": "Screenshot 2026 03 10 054317"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054344.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054344.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054344.webp",
+        "title": "Screenshot 2026 03 10 054344"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054355.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054355.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054355.webp",
+        "title": "Screenshot 2026 03 10 054355"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054404.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054404.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054404.webp",
+        "title": "Screenshot 2026 03 10 054404"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054436.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054436.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054436.webp",
+        "title": "Screenshot 2026 03 10 054436"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054455.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054455.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054455.webp",
+        "title": "Screenshot 2026 03 10 054455"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054510.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054510.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054510.webp",
+        "title": "Screenshot 2026 03 10 054510"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054535.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054535.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054535.webp",
+        "title": "Screenshot 2026 03 10 054535"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054546.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054546.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054546.webp",
+        "title": "Screenshot 2026 03 10 054546"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054559.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054559.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054559.webp",
+        "title": "Screenshot 2026 03 10 054559"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054610.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054610.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054610.webp",
+        "title": "Screenshot 2026 03 10 054610"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054620.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054620.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054620.webp",
+        "title": "Screenshot 2026 03 10 054620"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054631.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054631.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054631.webp",
+        "title": "Screenshot 2026 03 10 054631"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054643.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054643.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054643.webp",
+        "title": "Screenshot 2026 03 10 054643"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054658.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054658.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054658.webp",
+        "title": "Screenshot 2026 03 10 054658"
+      },
+      {
+        "original": "images/knowledge/graphic-design/Screenshot 2026-03-10 054708.png",
+        "thumb": "images/thumbs/knowledge/graphic-design/Screenshot 2026-03-10 054708.webp",
+        "preview": "images/previews/knowledge/graphic-design/Screenshot 2026-03-10 054708.webp",
+        "title": "Screenshot 2026 03 10 054708"
+      }
+    ],
+    "animation": [
+      {
+        "original": "images/knowledge/animation/5e3f2e98cfb305c0ebc92c26e4764065.jpg",
+        "thumb": "images/thumbs/knowledge/animation/5e3f2e98cfb305c0ebc92c26e4764065.webp",
+        "preview": "images/previews/knowledge/animation/5e3f2e98cfb305c0ebc92c26e4764065.webp",
+        "title": "e3f2e98cfb305c0ebc92c26e4764065"
+      },
+      {
+        "original": "images/knowledge/animation/7eec78590faaea74c61d3d423b3de9ed (1).jpg",
+        "thumb": "images/thumbs/knowledge/animation/7eec78590faaea74c61d3d423b3de9ed (1).webp",
+        "preview": "images/previews/knowledge/animation/7eec78590faaea74c61d3d423b3de9ed (1).webp",
+        "title": "eec78590faaea74c61d3d423b3de9ed (1)"
+      },
+      {
+        "original": "images/knowledge/animation/57f7f8b4fe77846fc9fe48ff0e13f413.jpg",
+        "thumb": "images/thumbs/knowledge/animation/57f7f8b4fe77846fc9fe48ff0e13f413.webp",
+        "preview": "images/previews/knowledge/animation/57f7f8b4fe77846fc9fe48ff0e13f413.webp",
+        "title": "f7f8b4fe77846fc9fe48ff0e13f413"
+      },
+      {
+        "original": "images/knowledge/animation/336d66f97c4b61c64259f985aa715f49.gif",
+        "thumb": "images/knowledge/animation/336d66f97c4b61c64259f985aa715f49.gif",
+        "preview": "images/knowledge/animation/336d66f97c4b61c64259f985aa715f49.gif",
+        "title": "d66f97c4b61c64259f985aa715f49"
+      },
+      {
+        "original": "images/knowledge/animation/2425899-walkcycle_side1(1).jpeg",
+        "thumb": "images/thumbs/knowledge/animation/2425899-walkcycle_side1(1).webp",
+        "preview": "images/previews/knowledge/animation/2425899-walkcycle_side1(1).webp",
+        "title": "walkcycle side1(1)"
+      },
+      {
+        "original": "images/knowledge/animation/c0cdaff5333c1dc8711c4ab1a41d7406.jpg",
+        "thumb": "images/thumbs/knowledge/animation/c0cdaff5333c1dc8711c4ab1a41d7406.webp",
+        "preview": "images/previews/knowledge/animation/c0cdaff5333c1dc8711c4ab1a41d7406.webp",
+        "title": "c0cdaff5333c1dc8711c4ab1a41d7406"
+      },
+      {
+        "original": "images/knowledge/animation/d7586a9402eade9c9ce84a10fe00490a.jpg",
+        "thumb": "images/thumbs/knowledge/animation/d7586a9402eade9c9ce84a10fe00490a.webp",
+        "preview": "images/previews/knowledge/animation/d7586a9402eade9c9ce84a10fe00490a.webp",
+        "title": "d7586a9402eade9c9ce84a10fe00490a"
+      },
+      {
+        "original": "images/knowledge/animation/dd3e5893a4611a38981b3da113cde967.jpg",
+        "thumb": "images/thumbs/knowledge/animation/dd3e5893a4611a38981b3da113cde967.webp",
+        "preview": "images/previews/knowledge/animation/dd3e5893a4611a38981b3da113cde967.webp",
+        "title": "dd3e5893a4611a38981b3da113cde967"
+      },
+      {
+        "original": "images/knowledge/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.jpg",
+        "thumb": "images/thumbs/knowledge/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.webp",
+        "preview": "images/previews/knowledge/animation/f7e7d248c3bfd0e2897c573dce6d3e7c.webp",
+        "title": "f7e7d248c3bfd0e2897c573dce6d3e7c"
+      },
+      {
+        "original": "images/knowledge/animation/f.jpg",
+        "thumb": "images/thumbs/knowledge/animation/f.webp",
+        "preview": "images/previews/knowledge/animation/f.webp",
+        "title": "f"
+      },
+      {
+        "original": "images/knowledge/animation/fe45850bb7db70f904a967a065b4be76.jpg",
+        "thumb": "images/thumbs/knowledge/animation/fe45850bb7db70f904a967a065b4be76.webp",
+        "preview": "images/previews/knowledge/animation/fe45850bb7db70f904a967a065b4be76.webp",
+        "title": "fe45850bb7db70f904a967a065b4be76"
+      },
+      {
+        "original": "images/knowledge/animation/richard-williams-run-cycle-copy.jpg",
+        "thumb": "images/thumbs/knowledge/animation/richard-williams-run-cycle-copy.webp",
+        "preview": "images/previews/knowledge/animation/richard-williams-run-cycle-copy.webp",
+        "title": "richard williams run cycle copy"
+      },
+      {
+        "original": "images/knowledge/animation/walk_cycle(1).jpg",
+        "thumb": "images/thumbs/knowledge/animation/walk_cycle(1).webp",
+        "preview": "images/previews/knowledge/animation/walk_cycle(1).webp",
+        "title": "walk cycle(1)"
+      }
+    ],
+    "training": [
+      {
+        "original": "images/knowledge/training/0b36ca39eda553c32e1652f288eec7e2.jpg",
+        "thumb": "images/thumbs/knowledge/training/0b36ca39eda553c32e1652f288eec7e2.webp",
+        "preview": "images/previews/knowledge/training/0b36ca39eda553c32e1652f288eec7e2.webp",
+        "title": "b36ca39eda553c32e1652f288eec7e2"
+      },
+      {
+        "original": "images/knowledge/training/2a969016def2946d00ac67ed56a7e767.jpg",
+        "thumb": "images/thumbs/knowledge/training/2a969016def2946d00ac67ed56a7e767.webp",
+        "preview": "images/previews/knowledge/training/2a969016def2946d00ac67ed56a7e767.webp",
+        "title": "a969016def2946d00ac67ed56a7e767"
+      },
+      {
+        "original": "images/knowledge/training/8a5df8c9c91ec007584b0327c3b37837.jpg",
+        "thumb": "images/thumbs/knowledge/training/8a5df8c9c91ec007584b0327c3b37837.webp",
+        "preview": "images/previews/knowledge/training/8a5df8c9c91ec007584b0327c3b37837.webp",
+        "title": "a5df8c9c91ec007584b0327c3b37837"
+      },
+      {
+        "original": "images/knowledge/training/bc9aa5aee5682514c983e5d74b3182fc.jpg",
+        "thumb": "images/thumbs/knowledge/training/bc9aa5aee5682514c983e5d74b3182fc.webp",
+        "preview": "images/previews/knowledge/training/bc9aa5aee5682514c983e5d74b3182fc.webp",
+        "title": "bc9aa5aee5682514c983e5d74b3182fc"
+      },
+      {
+        "original": "images/knowledge/training/cffbb262a7d36f71c026c44ea3822f25.webp",
+        "thumb": "images/knowledge/training/cffbb262a7d36f71c026c44ea3822f25.webp",
+        "preview": "images/knowledge/training/cffbb262a7d36f71c026c44ea3822f25.webp",
+        "title": "cffbb262a7d36f71c026c44ea3822f25"
+      },
+      {
+        "original": "images/knowledge/training/d1484a51ca53604420c544ac0afeb6db.webp",
+        "thumb": "images/knowledge/training/d1484a51ca53604420c544ac0afeb6db.webp",
+        "preview": "images/knowledge/training/d1484a51ca53604420c544ac0afeb6db.webp",
+        "title": "d1484a51ca53604420c544ac0afeb6db"
+      },
+      {
+        "original": "images/knowledge/training/unnamed (1).png",
+        "thumb": "images/thumbs/knowledge/training/unnamed (1).webp",
+        "preview": "images/previews/knowledge/training/unnamed (1).webp",
+        "title": "unnamed (1)"
+      }
+    ]
   }
 };
