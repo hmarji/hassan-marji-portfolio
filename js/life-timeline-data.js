@@ -1,34 +1,103 @@
 /* HM Portfolio — Life Timeline metadata
-Edit only the date and caption values below.
-
-Examples:
-  date: "1978"
-  date: "June 1996"
-  caption: "At school in Beirut."
-
-The file name identifies the photograph, so you can reorder thumbnails
-without losing the correct date/caption.
+   Written automatically by EDIT_TIMELINE.bat.
+   Date format: YYYY, YYYY-MM, or YYYY-MM-DD.
 */
 window.HM_LIFE_TIMELINE = [
-  { file: "21.webp", date: "", caption: "" },
-  { file: "22.webp", date: "", caption: "" },
-  { file: "23.webp", date: "", caption: "" },
-  { file: "24.webp", date: "", caption: "" },
-  { file: "25.webp", date: "", caption: "" },
-  { file: "26.webp", date: "", caption: "" },
-  { file: "27.webp", date: "", caption: "" },
-  { file: "28.webp", date: "", caption: "" },
-  { file: "29.webp", date: "", caption: "" },
-  { file: "30.webp", date: "", caption: "" },
-  { file: "31.webp", date: "", caption: "" },
-  { file: "32.webp", date: "", caption: "" },
-  { file: "33.webp", date: "", caption: "" },
-  { file: "34.webp", date: "", caption: "" },
-  { file: "35.webp", date: "", caption: "" },
-  { file: "36.webp", date: "", caption: "" },
-  { file: "37.webp", date: "", caption: "" },
-  { file: "38.webp", date: "", caption: "" },
-  { file: "39.webp", date: "", caption: "" }
+  {
+    "file": "21.webp",
+    "date": "1978",
+    "caption": ""
+  },
+  {
+    "file": "22.webp",
+    "date": "1979",
+    "caption": ""
+  },
+  {
+    "file": "23.webp",
+    "date": "1980",
+    "caption": ""
+  },
+  {
+    "file": "24.webp",
+    "date": "1981",
+    "caption": ""
+  },
+  {
+    "file": "25.webp",
+    "date": "1992",
+    "caption": ""
+  },
+  {
+    "file": "26.webp",
+    "date": "1992",
+    "caption": ""
+  },
+  {
+    "file": "27.webp",
+    "date": "2007",
+    "caption": ""
+  },
+  {
+    "file": "28.webp",
+    "date": "2008",
+    "caption": ""
+  },
+  {
+    "file": "29.webp",
+    "date": "2009",
+    "caption": ""
+  },
+  {
+    "file": "30.webp",
+    "date": "2010",
+    "caption": ""
+  },
+  {
+    "file": "31.webp",
+    "date": "2011",
+    "caption": ""
+  },
+  {
+    "file": "32.webp",
+    "date": "2012",
+    "caption": ""
+  },
+  {
+    "file": "33.webp",
+    "date": "2012",
+    "caption": ""
+  },
+  {
+    "file": "34.webp",
+    "date": "2012",
+    "caption": ""
+  },
+  {
+    "file": "35.webp",
+    "date": "2013",
+    "caption": ""
+  },
+  {
+    "file": "36.webp",
+    "date": "2012",
+    "caption": ""
+  },
+  {
+    "file": "37.webp",
+    "date": "2018",
+    "caption": ""
+  },
+  {
+    "file": "38.webp",
+    "date": "2019",
+    "caption": ""
+  },
+  {
+    "file": "39.webp",
+    "date": "2019",
+    "caption": ""
+  }
 ];
 
 /* HM Portfolio — Life Timeline temporarily hidden.

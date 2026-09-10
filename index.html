@@ -250,28 +250,16 @@
         </div>
       </div>
 
-      <section class="life-timeline" aria-labelledby="life-timeline-title">
-        <div class="life-timeline-head"><h3 id="life-timeline-title">A life in images.</h3></div>
-        <div class="life-viewer" id="lifeViewer">
-          <button class="life-nav life-prev" id="lifePrev" type="button" aria-label="Previous timeline image">←</button>
-          <figure>
-            <img id="lifeMainImage" src="images/previews/about/life-timeline/21.webp" alt="Selected life timeline photograph" decoding="async" loading="lazy">
-            <figcaption class="life-viewer-meta">
-              <span id="lifeCounter">01 / 19</span>
-              <div class="life-viewer-date">
-                <span class="life-meta-label">Date</span>
-                <strong id="lifeDate">—</strong>
-              </div>
-              <div class="life-viewer-caption">
-                <span class="life-meta-label">Caption</span>
-                <p id="lifeCaption">Life timeline photograph 01</p>
-              </div>
-            </figcaption>
-          </figure>
-          <button class="life-nav life-next" id="lifeNext" type="button" aria-label="Next timeline image">→</button>
+      <section class="life-timeline" id="life-timeline" aria-labelledby="life-timeline-title">
+        <div class="life-timeline-head">
+          <h3 id="life-timeline-title">A life in images.</h3>
+          <p class="life-timeline-note">Chronological image archive</p>
         </div>
-        <div class="life-strip-wrap"><div class="life-strip" id="lifeStrip" aria-label="Life timeline thumbnails">
-          <button class="life-thumb is-active" type="button" data-life-index="0" aria-label="Open timeline image 1"><img src="images/thumbs/about/life-timeline/21.webp" alt="Life timeline photograph 1" loading="lazy" decoding="async"></button>
+
+        <div class="life-strip-wrap">
+          <div class="life-strip" id="lifeStrip" aria-label="Life timeline">
+            <span class="life-timeline-indicator" id="lifeTimelineIndicator" aria-hidden="true"></span>
+            <button class="life-thumb is-active" type="button" data-life-index="0" aria-label="Open timeline image 1"><img src="images/thumbs/about/life-timeline/21.webp" alt="Life timeline photograph 1" loading="lazy" decoding="async"></button>
           <button class="life-thumb" type="button" data-life-index="1" aria-label="Open timeline image 2"><img src="images/thumbs/about/life-timeline/22.webp" alt="Life timeline photograph 2" loading="lazy" decoding="async"></button>
           <button class="life-thumb" type="button" data-life-index="2" aria-label="Open timeline image 3"><img src="images/thumbs/about/life-timeline/23.webp" alt="Life timeline photograph 3" loading="lazy" decoding="async"></button>
           <button class="life-thumb" type="button" data-life-index="3" aria-label="Open timeline image 4"><img src="images/thumbs/about/life-timeline/24.webp" alt="Life timeline photograph 4" loading="lazy" decoding="async"></button>
@@ -290,10 +278,54 @@
           <button class="life-thumb" type="button" data-life-index="16" aria-label="Open timeline image 17"><img src="images/thumbs/about/life-timeline/37.webp" alt="Life timeline photograph 17" loading="lazy" decoding="async"></button>
           <button class="life-thumb" type="button" data-life-index="17" aria-label="Open timeline image 18"><img src="images/thumbs/about/life-timeline/38.webp" alt="Life timeline photograph 18" loading="lazy" decoding="async"></button>
           <button class="life-thumb" type="button" data-life-index="18" aria-label="Open timeline image 19"><img src="images/thumbs/about/life-timeline/39.webp" alt="Life timeline photograph 19" loading="lazy" decoding="async"></button>
-        </div></div>
+          </div>
+        </div>
+
+        <div class="life-lightbox" id="lifeLightbox" aria-hidden="true">
+          <button class="life-lightbox-close" id="lifeLightboxClose" type="button" aria-label="Close image">×</button>
+          <button class="life-lightbox-nav life-lightbox-prev" id="lifeLightboxPrev" type="button" aria-label="Previous image">←</button>
+
+          <figure class="life-lightbox-figure">
+            <img id="lifeLightboxImage" src="" alt="">
+            <figcaption class="life-lightbox-meta">
+              <span id="lifeLightboxCounter">01 / 19</span>
+              <strong id="lifeLightboxDate">Undated</strong>
+              <p id="lifeLightboxCaption"></p>
+            </figcaption>
+          </figure>
+
+          <button class="life-lightbox-nav life-lightbox-next" id="lifeLightboxNext" type="button" aria-label="Next image">→</button>
+        </div>
+
+        <div class="life-editor-modal" id="lifeEditorModal" aria-hidden="true">
+          <form class="life-editor-card" id="lifeEditorForm">
+            <div class="life-editor-head">
+              <strong>Edit timeline image</strong>
+              <button id="lifeEditorClose" type="button" aria-label="Close editor">×</button>
+            </div>
+
+            <label>
+              <span>Date</span>
+              <input id="lifeEditorDate" type="text" autocomplete="off" placeholder="YYYY, YYYY-MM, or YYYY-MM-DD">
+              <small>Examples: 1978 · 1996-06 · 2004-11-18</small>
+            </label>
+
+            <label>
+              <span>Caption</span>
+              <textarea id="lifeEditorCaption" rows="4" placeholder="Write the caption"></textarea>
+            </label>
+
+            <p class="life-editor-error" id="lifeEditorError" hidden></p>
+
+            <div class="life-editor-actions">
+              <button type="button" id="lifeEditorCancel">Cancel</button>
+              <button type="submit">Save &amp; arrange</button>
+            </div>
+          </form>
+        </div>
       </section>
 
-    <section class="selected-work" id="work" aria-labelledby="selected-work-title">
+      <section class="selected-work" id="work" aria-labelledby="selected-work-title">
       <div class="selected-work-head">
         <p class="section-index">01 / Selected Work</p>
         <h2 id="selected-work-title">Selected work</h2>

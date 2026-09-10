@@ -458,55 +458,106 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   close.addEventListener('click',shut);lb.addEventListener('click',e=>{if(e.target===lb)shut()});window.addEventListener('keydown',e=>{if(e.key==='Escape'&&lb.classList.contains('is-open'))shut()});
 })();
 
-/* HM FINAL — Life Timeline viewer + date/caption metadata */
+/* HM FINAL — Chronological Life Timeline */
 (() => {
   const strip = document.getElementById('lifeStrip');
-  const main = document.getElementById('lifeMainImage');
-  const counter = document.getElementById('lifeCounter');
-  const dateEl = document.getElementById('lifeDate');
-  const captionEl = document.getElementById('lifeCaption');
-  const prev = document.getElementById('lifePrev');
-  const next = document.getElementById('lifeNext');
+  if (!strip) return;
 
-  if (!strip || !main) return;
+  const indicator = document.getElementById('lifeTimelineIndicator');
+  const lightbox = document.getElementById('lifeLightbox');
+  const lightboxImage = document.getElementById('lifeLightboxImage');
+  const lightboxCounter = document.getElementById('lifeLightboxCounter');
+  const lightboxDate = document.getElementById('lifeLightboxDate');
+  const lightboxCaption = document.getElementById('lifeLightboxCaption');
+  const closeLightbox = document.getElementById('lifeLightboxClose');
+  const prevLightbox = document.getElementById('lifeLightboxPrev');
+  const nextLightbox = document.getElementById('lifeLightboxNext');
 
-  const thumbs = [...strip.querySelectorAll('.life-thumb')];
-  if (!thumbs.length) return;
+  const editorModal = document.getElementById('lifeEditorModal');
+  const editorForm = document.getElementById('lifeEditorForm');
+  const editorDate = document.getElementById('lifeEditorDate');
+  const editorCaption = document.getElementById('lifeEditorCaption');
+  const editorError = document.getElementById('lifeEditorError');
+  const editorClose = document.getElementById('lifeEditorClose');
+  const editorCancel = document.getElementById('lifeEditorCancel');
 
-  const metadata = Array.isArray(window.HM_LIFE_TIMELINE)
-    ? window.HM_LIFE_TIMELINE
-    : [];
+  const editMode =
+    (location.hostname === '127.0.0.1' || location.hostname === 'localhost') &&
+    new URLSearchParams(location.search).get('timeline-edit') === '1';
 
-  const metaByFile = new Map(
-    metadata
-      .filter(item => item && item.file)
-      .map(item => [String(item.file).toLowerCase(), item])
-  );
+  document.documentElement.classList.toggle('timeline-edit-mode', editMode);
 
   const pad = n => String(n).padStart(2, '0');
 
   const fileFromSrc = src => {
     const clean = String(src || '').split('?')[0].split('#')[0];
-    return decodeURIComponent(clean.substring(clean.lastIndexOf('/') + 1)).toLowerCase();
+    return decodeURIComponent(clean.substring(clean.lastIndexOf('/') + 1));
   };
 
   const toPreview = src => String(src || '').replace('/thumbs/', '/previews/');
 
-  const getMeta = (thumb, i) => {
-    const img = thumb.querySelector('img');
-    const file = fileFromSrc(img?.getAttribute('src') || img?.currentSrc || img?.src);
-    const item = metaByFile.get(file) || {};
-    return {
-      date: String(item.date || '').trim(),
-      caption: String(item.caption || '').trim(),
-      fallbackCaption: `Life timeline photograph ${pad(i + 1)}`
-    };
+  const validDate = value =>
+    value === '' ||
+    /^\d{4}$/.test(value) ||
+    /^\d{4}-(0[1-9]|1[0-2])$/.test(value) ||
+    /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/.test(value);
+
+  const dateKey = value => {
+    const v = String(value || '').trim();
+    if (!validDate(v) || !v) return Number.POSITIVE_INFINITY;
+    const parts = v.split('-').map(Number);
+    const y = parts[0];
+    const m = parts[1] || 0;
+    const d = parts[2] || 0;
+    return (y * 10000) + (m * 100) + d;
   };
 
-  // Add compact date + caption underneath every thumbnail.
-  thumbs.forEach((thumb, i) => {
-    let meta = thumb.querySelector('.life-thumb-meta');
+  const sourceData = Array.isArray(window.HM_LIFE_TIMELINE)
+    ? window.HM_LIFE_TIMELINE
+    : [];
 
+  const metadata = new Map(
+    sourceData
+      .filter(item => item && item.file)
+      .map(item => [
+        String(item.file),
+        {
+          file: String(item.file),
+          date: String(item.date || '').trim(),
+          caption: String(item.caption || '').trim()
+        }
+      ])
+  );
+
+  let thumbs = [];
+  let index = 0;
+  let editingFile = null;
+
+  function ensureCardParts(thumb, originalOrder) {
+    const img = thumb.querySelector('img');
+    if (!img) return;
+
+    const file = fileFromSrc(img.getAttribute('src') || img.currentSrc || img.src);
+    thumb.dataset.lifeFile = file;
+    thumb.dataset.originalOrder = String(originalOrder);
+
+    let track = thumb.querySelector('.life-thumb-track');
+    if (!track) {
+      track = document.createElement('span');
+      track.className = 'life-thumb-track';
+      track.innerHTML = '<span class="life-thumb-dot"></span>';
+      thumb.prepend(track);
+    }
+
+    let body = thumb.querySelector('.life-thumb-body');
+    if (!body) {
+      body = document.createElement('span');
+      body.className = 'life-thumb-body';
+      img.replaceWith(body);
+      body.appendChild(img);
+    }
+
+    let meta = thumb.querySelector('.life-thumb-meta');
     if (!meta) {
       meta = document.createElement('span');
       meta.className = 'life-thumb-meta';
@@ -517,118 +568,233 @@ document.querySelectorAll('.site-nav a').forEach(link => {
       thumb.appendChild(meta);
     }
 
-    const item = getMeta(thumb, i);
-    meta.querySelector('.life-thumb-date').textContent = item.date || '—';
-    meta.querySelector('.life-thumb-caption').textContent =
-      item.caption || item.fallbackCaption;
-  });
+    if (editMode && !thumb.querySelector('.life-thumb-settings')) {
+      const settings = document.createElement('span');
+      settings.className = 'life-thumb-settings';
+      settings.setAttribute('role', 'button');
+      settings.setAttribute('aria-label', 'Edit date and caption');
+      settings.title = 'Edit date and caption';
+      settings.innerHTML = `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h10M18 7h2M4 17h2M10 17h10M8 4v6M16 14v6"></path>
+        </svg>
+      `;
+      body.appendChild(settings);
+    }
+  }
 
-  let index = Math.max(
-    0,
-    thumbs.findIndex(thumb => thumb.classList.contains('is-active'))
-  );
+  function getMeta(thumb) {
+    const file = thumb.dataset.lifeFile || '';
+    return metadata.get(file) || { file, date: '', caption: '' };
+  }
 
-  function show(nextIndex, scrollThumb = true) {
-    index = (nextIndex + thumbs.length) % thumbs.length;
+  function refreshCard(thumb) {
+    const meta = getMeta(thumb);
+    const dateEl = thumb.querySelector('.life-thumb-date');
+    const captionEl = thumb.querySelector('.life-thumb-caption');
+    if (dateEl) {
+      dateEl.textContent = meta.date || 'Undated';
+      dateEl.classList.toggle('is-undated', !meta.date);
+    }
+    if (captionEl) {
+      captionEl.textContent = meta.caption || '';
+      captionEl.classList.toggle('is-empty', !meta.caption);
+    }
+  }
 
+  function sortTimeline(selectedFile = null) {
+    thumbs = [...strip.querySelectorAll('.life-thumb')];
+    thumbs.sort((a, b) => {
+      const ka = dateKey(getMeta(a).date);
+      const kb = dateKey(getMeta(b).date);
+      if (ka !== kb) return ka - kb;
+      return Number(a.dataset.originalOrder || 0) - Number(b.dataset.originalOrder || 0);
+    });
+    thumbs.forEach(thumb => strip.appendChild(thumb));
+    thumbs.forEach(refreshCard);
+    if (selectedFile) {
+      const found = thumbs.findIndex(t => t.dataset.lifeFile === selectedFile);
+      index = found >= 0 ? found : 0;
+    } else {
+      index = Math.max(0, Math.min(index, thumbs.length - 1));
+    }
+    syncSelection(false);
+  }
+
+  function moveIndicator(thumb) {
+    if (!indicator || !thumb) return;
+    const x = thumb.offsetLeft + (thumb.offsetWidth / 2);
+    indicator.style.transform = `translateX(${x}px)`;
+  }
+
+  function syncSelection(scrollIntoView = true) {
+    if (!thumbs.length) return;
     thumbs.forEach((thumb, i) => {
       const active = i === index;
       thumb.classList.toggle('is-active', active);
       thumb.setAttribute('aria-current', active ? 'true' : 'false');
     });
-
     const thumb = thumbs[index];
-    const img = thumb.querySelector('img');
-
-    if (img) {
-      const rawSrc = img.getAttribute('src') || img.currentSrc || img.src;
-      main.src = toPreview(rawSrc);
-      main.alt = img.alt || `Life timeline photograph ${index + 1}`;
-    }
-
-    if (counter) {
-      counter.textContent = `${pad(index + 1)} / ${pad(thumbs.length)}`;
-    }
-
-    const item = getMeta(thumb, index);
-    if (dateEl) dateEl.textContent = item.date || '—';
-    if (captionEl) captionEl.textContent = item.caption || item.fallbackCaption;
-
-    if (scrollThumb) {
-      thumb.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'center'
-      });
+    moveIndicator(thumb);
+    if (scrollIntoView) {
+      thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      setTimeout(() => moveIndicator(thumb), 320);
     }
   }
 
-  // Reliable click selection using event delegation.
+  function openImage(nextIndex) {
+    if (!thumbs.length || !lightbox || !lightboxImage) return;
+    index = (nextIndex + thumbs.length) % thumbs.length;
+    syncSelection(true);
+    const thumb = thumbs[index];
+    const img = thumb.querySelector('img');
+    const meta = getMeta(thumb);
+    const rawSrc = img?.getAttribute('src') || img?.currentSrc || img?.src || '';
+    lightboxImage.src = toPreview(rawSrc);
+    lightboxImage.alt = img?.alt || `Life timeline photograph ${index + 1}`;
+    if (lightboxCounter) lightboxCounter.textContent = `${pad(index + 1)} / ${pad(thumbs.length)}`;
+    if (lightboxDate) lightboxDate.textContent = meta.date || 'Undated';
+    if (lightboxCaption) lightboxCaption.textContent = meta.caption || '';
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeImage() {
+    if (!lightbox) return;
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function openEditor(thumb) {
+    if (!editMode || !editorModal) return;
+    const meta = getMeta(thumb);
+    editingFile = thumb.dataset.lifeFile;
+    editorDate.value = meta.date || '';
+    editorCaption.value = meta.caption || '';
+    editorError.hidden = true;
+    editorError.textContent = '';
+    editorModal.classList.add('is-open');
+    editorModal.setAttribute('aria-hidden', 'false');
+    setTimeout(() => editorDate.focus(), 30);
+  }
+
+  function closeEditor() {
+    if (!editorModal) return;
+    editorModal.classList.remove('is-open');
+    editorModal.setAttribute('aria-hidden', 'true');
+    editingFile = null;
+  }
+
+  async function saveEditor(event) {
+    event.preventDefault();
+    if (!editingFile) return;
+    const date = editorDate.value.trim();
+    const caption = editorCaption.value.trim();
+    if (!validDate(date)) {
+      editorError.textContent = 'Use YYYY, YYYY-MM, or YYYY-MM-DD.';
+      editorError.hidden = false;
+      editorDate.focus();
+      return;
+    }
+    metadata.set(editingFile, { file: editingFile, date, caption });
+    const payload = [...metadata.values()];
+    try {
+      const response = await fetch('/api/timeline', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!response.ok) throw new Error(await response.text());
+      closeEditor();
+      sortTimeline(editingFile);
+    } catch (error) {
+      editorError.textContent = 'Could not save. Open the site using EDIT_TIMELINE.bat.';
+      editorError.hidden = false;
+      console.error(error);
+    }
+  }
+
+  [...strip.querySelectorAll('.life-thumb')].forEach((thumb, i) => ensureCardParts(thumb, i));
+  thumbs = [...strip.querySelectorAll('.life-thumb')];
+  sortTimeline();
+
+  let dragged = false;
   strip.addEventListener('click', event => {
     const thumb = event.target.closest('.life-thumb');
     if (!thumb || !strip.contains(thumb)) return;
-    if (strip.dataset.wasDragged === 'true') return;
-
+    if (dragged || strip.dataset.wasDragged === 'true') return;
+    const settings = event.target.closest('.life-thumb-settings');
+    if (settings) {
+      event.preventDefault();
+      event.stopPropagation();
+      openEditor(thumb);
+      return;
+    }
     event.preventDefault();
     const i = thumbs.indexOf(thumb);
-    if (i >= 0) show(i, false);
+    if (i >= 0) openImage(i);
   });
 
-  prev?.addEventListener('click', () => show(index - 1));
-  next?.addEventListener('click', () => show(index + 1));
+  closeLightbox?.addEventListener('click', closeImage);
+  prevLightbox?.addEventListener('click', event => { event.stopPropagation(); openImage(index - 1); });
+  nextLightbox?.addEventListener('click', event => { event.stopPropagation(); openImage(index + 1); });
+  lightbox?.addEventListener('click', event => { if (event.target === lightbox) closeImage(); });
 
-  // Drag horizontally WITHOUT pointer capture.
-  // This is the key fix that keeps normal thumbnail clicks alive.
+  editorForm?.addEventListener('submit', saveEditor);
+  editorClose?.addEventListener('click', closeEditor);
+  editorCancel?.addEventListener('click', closeEditor);
+  editorModal?.addEventListener('click', event => { if (event.target === editorModal) closeEditor(); });
+
+  window.addEventListener('keydown', event => {
+    if (editorModal?.classList.contains('is-open')) {
+      if (event.key === 'Escape') closeEditor();
+      return;
+    }
+    if (!lightbox?.classList.contains('is-open')) return;
+    if (event.key === 'Escape') closeImage();
+    if (event.key === 'ArrowLeft') openImage(index - 1);
+    if (event.key === 'ArrowRight') openImage(index + 1);
+  });
+
   let dragging = false;
-  let moved = false;
   let startX = 0;
   let startScroll = 0;
-  const dragThreshold = 7;
-
   strip.addEventListener('pointerdown', event => {
     if (event.button !== undefined && event.button !== 0) return;
     dragging = true;
-    moved = false;
+    dragged = false;
     strip.dataset.wasDragged = 'false';
     startX = event.clientX;
     startScroll = strip.scrollLeft;
   });
-
   window.addEventListener('pointermove', event => {
     if (!dragging) return;
-
     const dx = event.clientX - startX;
-
-    if (!moved && Math.abs(dx) > dragThreshold) {
-      moved = true;
-      strip.classList.add('is-dragging');
+    if (!dragged && Math.abs(dx) > 7) {
+      dragged = true;
       strip.dataset.wasDragged = 'true';
+      strip.classList.add('is-dragging');
     }
-
-    if (moved) {
+    if (dragged) {
       strip.scrollLeft = startScroll - dx;
       event.preventDefault();
     }
   }, { passive: false });
-
   window.addEventListener('pointerup', () => {
     if (!dragging) return;
-
     dragging = false;
     strip.classList.remove('is-dragging');
-
-    setTimeout(() => {
-      strip.dataset.wasDragged = 'false';
-    }, 80);
+    setTimeout(() => { dragged = false; strip.dataset.wasDragged = 'false'; }, 90);
   });
-
   window.addEventListener('pointercancel', () => {
     dragging = false;
+    dragged = false;
     strip.classList.remove('is-dragging');
     strip.dataset.wasDragged = 'false';
   });
-
-  show(index, false);
+  window.addEventListener('resize', () => { if (thumbs[index]) moveIndicator(thumbs[index]); });
 })();
 
 /* HM PATCH — Selected Work navigator */
