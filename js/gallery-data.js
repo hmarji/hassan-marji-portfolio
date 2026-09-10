@@ -90,12 +90,6 @@ window.HM_GALLERY_DATA = {
         "title": "cd3406b 488a 441f a1e3 684774a4b5bb"
       },
       {
-        "original": "images/practice/engineering/06.png",
-        "thumb": "images/thumbs/practice/engineering/06.webp",
-        "preview": "images/previews/practice/engineering/06.webp",
-        "title": "06"
-      },
-      {
         "original": "images/practice/engineering/07.png",
         "thumb": "images/thumbs/practice/engineering/07.webp",
         "preview": "images/previews/practice/engineering/07.webp",
@@ -118,12 +112,6 @@ window.HM_GALLERY_DATA = {
         "thumb": "images/thumbs/practice/engineering/11.webp",
         "preview": "images/previews/practice/engineering/11.webp",
         "title": "11"
-      },
-      {
-        "original": "images/practice/engineering/12.png",
-        "thumb": "images/thumbs/practice/engineering/12.webp",
-        "preview": "images/previews/practice/engineering/12.webp",
-        "title": "12"
       },
       {
         "original": "images/practice/engineering/13.png",
