@@ -15,12 +15,12 @@ echo   Knowledge     : images\knowledge\CATEGORY\
 echo.
 echo Categories:
 echo   engineering
- echo   painting
- echo   photography
- echo   graphic-design
- echo   animation
- echo   training
- echo.
+echo   painting
+echo   photography
+echo   graphic-design
+echo   animation
+echo   training
+echo.
 echo Do NOT manually edit images\thumbs or images\previews.
 echo.
 
@@ -73,14 +73,14 @@ exit /b 1
 :python_found
 echo Python found.
 echo.
-echo [1/4] Normalizing old folders and names...
+echo [1/5] Normalizing old folders and names...
 echo.
 
 %PY_CMD% %PY_ARGS% "sync_portfolio_folders.py" --migrate
 if errorlevel 1 goto :failed
 
 echo.
-echo [2/4] Checking image optimizer...
+echo [2/5] Checking image optimizer...
 
 %PY_CMD% %PY_ARGS% -c "import PIL" >nul 2>nul
 if errorlevel 1 (
@@ -102,14 +102,21 @@ if errorlevel 1 (
 )
 
 echo.
-echo [3/4] Rebuilding gallery data and optimized images...
+echo [3/5] Rebuilding gallery data and optimized images...
 echo.
 
 %PY_CMD% %PY_ARGS% "update_portfolio.py"
 if errorlevel 1 goto :failed
 
 echo.
-echo [4/4] Removing unused generated thumbnails and previews...
+echo [4/5] Updating gallery cache version...
+echo.
+
+%PY_CMD% %PY_ARGS% -c "from pathlib import Path; import re,hashlib; p=Path('index.html'); s=p.read_text(encoding='utf-8-sig'); t=hashlib.sha1(Path('js/gallery-data.js').read_bytes()).hexdigest()[:12]; s2=re.sub(r'js/gallery-data\.js(?:\?v=[0-9A-Fa-f]+)?','js/gallery-data.js?v='+t,s); f=p.open('w',encoding='utf-8',newline='\n'); f.write(s2); f.close(); print('Gallery cache version:',t)"
+if errorlevel 1 goto :failed
+
+echo.
+echo [5/5] Removing unused generated thumbnails and previews...
 echo.
 
 %PY_CMD% %PY_ARGS% "sync_portfolio_folders.py" --cleanup
@@ -139,11 +146,11 @@ echo   images\knowledge\animation\
 echo   images\knowledge\training\
 echo.
 echo Old names such as education, architecture, graphic and images\originals
- echo are migrated automatically into the canonical folders.
+echo are migrated automatically into the canonical folders.
 echo.
 echo NEXT:
 echo   1. Open index.html and test the website locally.
-echo   2. Run git status and review the first migration carefully.
+echo   2. Run git status and review the changes.
 echo   3. If everything is correct, use PUSH_PORTFOLIO.bat.
 echo.
 echo This updater NEVER pushes automatically.
