@@ -287,3 +287,21 @@
   window.addEventListener('pageshow', updateCurrent);
   updateCurrent();
 })();
+
+/* HM Portfolio — title spacing refinement */
+(() => {
+  if (document.getElementById('hm-title-spacing')) return;
+  const style = document.createElement('style');
+  style.id = 'hm-title-spacing';
+  style.textContent = `
+    h1,
+    h2,
+    h3,
+    .statement-text,
+    .practice-list strong {
+      letter-spacing: -0.01em !important;
+      word-spacing: 0.14em !important;
+    }
+  `;
+  document.head.appendChild(style);
+})();
