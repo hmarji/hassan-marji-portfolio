@@ -418,12 +418,6 @@ window.HM_GALLERY_DATA = {
         "title": "19"
       },
       {
-        "original": "images/practice/photography/20.jpeg",
-        "thumb": "images/thumbs/practice/photography/20.webp",
-        "preview": "images/previews/practice/photography/20.webp",
-        "title": "20"
-      },
-      {
         "original": "images/practice/photography/21.jpeg",
         "thumb": "images/thumbs/practice/photography/21.webp",
         "preview": "images/previews/practice/photography/21.webp",
